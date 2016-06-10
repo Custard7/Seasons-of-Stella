@@ -15,5 +15,8 @@ label start:
     s "I am the Big Stella!"
 
     s "Get ready for an adventure!"
+    
+    s "Is it time for me to pupate?"
+    
 
     return
