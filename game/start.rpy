@@ -1,5 +1,10 @@
 # The game starts here.
 label start:
+
+    $ pucas_points = 0
+    $ alpha_phi_points = 0
+    $ nicaragua_points = 0
+    $ belfort_points = 0
     
     "9:52 Class of 2014 Sentinel Graduation"
 
@@ -31,17 +36,18 @@ label start:
     "He pats me on the back. Is he patronizing me?"
     s "No, not at all. It's not that big of a deal"
 
+
     menu:
          "What should I do?"
 
          "Ask him out.":
             p "No."
+            $ pucas_points += 10
          "Ride him like a pony.":
             s "I'm going to ride you like a pony"
-
-    "That happened."
-    
-    "Afterwards, Pucas just kept staring at me. It was kind of strange, sort of mystifying. It was as if his eyes were large black holes."
+            $ pucas_points -= 50
+            "That happened."
+            "Afterwards, Pucas just kept staring at me. It was kind of strange, sort of mystifying. It was as if his eyes were large black holes."
 
     jump pucas
 
