@@ -55,7 +55,4 @@ label start:
             "He never talked again."
 
     jump pucas
-#Don't fuck up my shit Jackson
-#Zeke added a comment here!
-#More fuckin shit
-#Keeth
+
