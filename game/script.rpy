@@ -5,6 +5,7 @@
 
 # Declare characters used by this game.
 define s = Character('Stella', color="#518CFF")
+define p = Character('Pucas Potato', color="#FFFFFF");
 
 
 # The game starts here.
