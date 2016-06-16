@@ -9,6 +9,9 @@ label start:
     
     s "Is it time for me to pupate?"
 
+    #Dissolve to black
+    #Chapter 1
+
     "I look around the hall, at the hundreds of students just like me. Waiting in anticipation from the sweet, hot release of graduation"
     "Finally, I'm ready. Ready to leave this life of being a big fish in a small pond"
     "High school was filled with drama..."
