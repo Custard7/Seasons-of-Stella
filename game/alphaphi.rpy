@@ -1,3 +1,3 @@
 label alphaphi:
 
-	return
+    return
