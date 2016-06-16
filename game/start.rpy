@@ -15,7 +15,7 @@ label start:
     "I look around the hall, at the hundreds of students just like me. Waiting in anticipation from the sweet, hot release of graduation"
     "Finally, I'm ready. Ready to leave this life of being a big fish in a small pond"
     "High school was filled with drama..."
-    "Across the crowded hall, an icy pare of peepers catches my eyes"
+    "Across the crowded hall, an icy pair of peepers catches my eyes"
     "Of course it's Maddie Velvet, the girl who's been out to get me since I beat her in the 3rd grade grill-off."
     
     p "Hey Stella!"
