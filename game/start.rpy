@@ -153,7 +153,7 @@ label ganja:
         "I'll pass.":
             $ nicaragua_points -= 10
             "Starbuck frowns at me."
-                star "But I thought you loved my mom's cooking!"
+            star "But I thought you loved my mom's cooking!"
             "I freeze. I DO love her mom's cooking."
             s "I didn't know your mom made it! I thought it was special, like . . . "
             "I look at her knowingly"
@@ -213,14 +213,14 @@ label post_brownie:
             jump stanley
     
         "I'll pass":
-             $ nicaragua_points -= 10
-            star "Really? What a nerd."
-            s "Excuse me?"
-            star "Yeah, you nerd. NERD. NERDY NERD."
-            s "You don't have to be so pretentious"
-            star "What do you mean {i}pretentious{/i}?"
-            "She asked for it"
-            "I walk up to Starbuck, nose to nose. Stare her down in the eye."
+           $ nicaragua_points -= 10
+           star "Really? What a nerd."
+           s "Excuse me?"
+           star "Yeah, you nerd. NERD. NERDY NERD."
+           s "You don't have to be so pretentious"
+           star "What do you mean {i}pretentious{/i}?"
+           "She asked for it"
+           "I walk up to Starbuck, nose to nose. Stare her down in the eye."
            s "Underneath that eyepatch, you're nothing more than a smelly, fuzzy-"
            "WHIIIRRRRR"
            "Starbuck's arms detach at the shoulder, revealing a web of wires and hydraulic pumps."
@@ -237,8 +237,8 @@ label post_brownie:
            "Why was she here?"
            "Why did that bitch say I have no potential?"
            "*HHHSSSSSSSSSSSSSSS*"
-            scene black
-            with Dissolve
-            jump stanley
+           scene black
+           with Dissolve
+           jump stanley
 
 label stanley:
