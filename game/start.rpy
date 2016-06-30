@@ -125,7 +125,8 @@ label ganja:
     "I turn around, quickly, and see-"
     star "Stella! Want some green ganja?"    
     "It's Starbuck. Pretentious and giggly, as usual."
-    "She's wearing stilts underneath her gown. Apparently those are in vogue now. "
+    "She's wearing stilts underneath her gown. Apparently those are in vogue now."
+    "Her bedazzled eyepatch scatters light like a discoball."
     s "Green ganja? Why would I want that?"
     star "Heehee! You'll be nervous, silly. You've got to speak in front of the WHOLE SCHOOL!"
     "She reaches into her pocket, pulls out a brownie, and shoves the whole thing in her mouth."
@@ -138,23 +139,106 @@ label ganja:
         "Should I take the pot brownie?"
     
         "Do it!":
-        $ nicaragua_points += 10
-        star "Nice dude. Here you go."
-        "She tosses me the brownie."
-        "I unwrap it, give it a good once over."
-        "*munch*"
-        s "MMf . . . Thib ib dewishus . . . huh?"
-        "DAMN. That's a good brownie. But it's not . . . special."
-        star "Oh, you thought THAT was the green ganja?"
-        "She gazes for a second, then-"
-        star "Bahahahahaha! Stella, that's one of my mom's brownies."
+            $ nicaragua_points += 10
+            star "Nice dude. Here you go."
+            "She tosses me the brownie."
+            "I unwrap it, give it a good once over."
+            "*munch*"
+            s "MMf . . . Thib ib dewishus . . . huh?"
+            "DAMN. That's a good brownie. But it's not . . . special."
+            star "Oh, you thought THAT was the green ganja?"
+            "She gazes for a second, then-"
+            star "Bahahahahaha! Stella, that's one of my mom's brownies. That's nothing like green ganja."
     
         "I'll pass.":
-        $ nicaragua_points -= 10
-        "Starbuck frowns at me."
-        star "But I thought you loved my mom's cooking!"
-        "I freeze. I DO love her mom's cooking."
-        s "I didn't know your mom made it! I thought"
-            pass
+            $ nicaragua_points -= 10
+            "Starbuck frowns at me."
+                star "But I thought you loved my mom's cooking!"
+            "I freeze. I DO love her mom's cooking."
+            s "I didn't know your mom made it! I thought it was special, like . . . "
+            "I look at her knowingly"
+            s "Green ganja?"
+            star "Seriously?"
+            "She scoffs."
+            star "That's nothing like green ganja!"
 
-label post_brownie
+
+label post_brownie: 
+    s "It's not my fault I'm not hip on what kids are dropping these days!"
+    star "You want green ganja? Here."
+    "She hops off her stilts, reaches down into her shoe."
+    "She's holding a small silver case. On the top of the case, engraved, are strange, runic symbols."
+    "Out of the edges of the case, a verdant glow pulsates."
+    star "Now this is green ganja. You want a hit?"
+    "Starbuck extends the case, then clicks it open."
+    "The glow pulsates with more frequency, the case gives off a high-pitched whine."
+
+    menu:
+        "Look inside?"
+        
+        "Just a peek . . .":
+            $ nicaragua_points += 25
+            "I peer over the edge of the case."
+            "Inside, emitting rays of blinding neon, is a rare creature."
+            "A cosmic shrimp."
+            "Its long, curved body wraps around itself indefinitely, an ocean-born Ouroboros."
+            "An enigmatic perfume wafts from the case, a bouquet of exotic spice and freshly hewn stone."
+            "I gaze into the eyes."
+            "The eyes."
+            "A chasmous, neverending maelstrom of antediluvian power looms beneath surface of these inky black bulbs."
+            shrimp "Forgive"
+            "What is this voice?"
+            shrimp "Exists no other lung save for the one through which thee breatheth."
+            "A high-pitched whine rises above the chatter."
+            s "Get out."
+            shrimp "As once was I, thou hast been burdened with terrible purpose."
+            "Terrible purpose?"
+            s "Aghh!"
+            "A grinding within my skull grows."
+            "It's a slow, dizzying grinding, individual nodules of brain tissue being smashed on the inside of my skull by a mortar and pestle."
+            "I can't move."
+            "I can't think."
+            "Help me."
+            "It hurts."
+            "You think this is a game?"
+            "No. This was your choice."
+            "You did this to me."
+            "YOU SUBJECTED ME TO THIS!"
+            "I WAS SUPPOSED TO BE SOMEONE!"
+            "GO SOMEWHERE!"
+            "NOT SUCCUMB TO THE FEELING THAT MY CRANIAL TISSUE, THE VERY FIBER OF MY SENTIENCE, IS BEING SPLINTERED INTO AN UNRECOGNIZABLE, PALLID MUCILAGE."
+            "DEATH IS NO RELEASE. DEATH IS PHILOSOPHICAL AGONY. YOU WILL NEVER, EVER, EVER-"
+            scene black
+            with Dissolve
+            jump stanley
+    
+        "I'll pass":
+             $ nicaragua_points -= 10
+            star "Really? What a nerd."
+            s "Excuse me?"
+            star "Yeah, you nerd. NERD. NERDY NERD."
+            s "You don't have to be so pretentious"
+            star "What do you mean {i}pretentious{/i}?"
+            "She asked for it"
+            "I walk up to Starbuck, nose to nose. Stare her down in the eye."
+           s "Underneath that eyepatch, you're nothing more than a smelly, fuzzy-"
+           "WHIIIRRRRR"
+           "Starbuck's arms detach at the shoulder, revealing a web of wires and hydraulic pumps."
+           "The arms crawl to the side of her head, latching on at the ear."
+           star "YOU HAVE NO POTENTIAL. RESCINDING OFFER, REVERTING MEMORY FILES. GOODBYE, STELLA BELFORT."
+           "The robotic voice reverberates with a tinny echo."
+           "Suddenly, a cloud of fuschia gas emits from Starbuck's empty shoulder sockets."
+           s "What the hell is happening? What are you, you freak?"
+           "The world seems strange, a little dim."
+           "Starbuck strides through the panicking crowd, spraying gas along her path"
+           s "What have you . . . what have you done?"
+           "My vision is fading fast."
+           "What is Starbuck?"
+           "Why was she here?"
+           "Why did that bitch say I have no potential?"
+           "*HHHSSSSSSSSSSSSSSS*"
+            scene black
+            with Dissolve
+            jump stanley
+
+label stanley:
