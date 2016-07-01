@@ -5,6 +5,8 @@ label start:
     $ alpha_phi_points = 0
     $ nicaragua_points = 0
     $ belfort_points = 0
+
+    $ inventory = {};
     
     "9:52 Class of 2014 Sentinel Graduation"
 
@@ -173,11 +175,15 @@ label post_brownie:
     "Starbuck extends the case, then clicks it open."
     "The glow pulsates with more frequency, the case gives off a high-pitched whine."
 
+    $ stella_saw_shrimp = False;
+    $ stella_saw_starbuck = False;
+
     menu:
         "Look inside?"
         
         "Just a peek . . .":
             $ nicaragua_points += 25
+            $ stella_saw_shrimp = True
             "I peer over the edge of the case."
             "Inside, emitting rays of blinding neon, is a rare creature."
             "A cosmic shrimp."
@@ -209,11 +215,13 @@ label post_brownie:
             "NOT SUCCUMB TO THE FEELING THAT MY CRANIAL TISSUE, THE VERY FIBER OF MY SENTIENCE, IS BEING SPLINTERED INTO AN UNRECOGNIZABLE, PALLID MUCILAGE."
             "DEATH IS NO RELEASE. DEATH IS PHILOSOPHICAL AGONY. YOU WILL NEVER, EVER, EVER-"
             scene black
-            with Dissolve
+            #with Dissolve
             jump stanley
     
         "I'll pass":
            $ nicaragua_points -= 10
+           $ stella_saw_starbuck = True;
+
            star "Really? What a nerd."
            s "Excuse me?"
            star "Yeah, you nerd. NERD. NERDY NERD."
@@ -238,7 +246,145 @@ label post_brownie:
            "Why did that bitch say I have no potential?"
            "*HHHSSSSSSSSSSSSSSS*"
            scene black
-           with Dissolve
+           #with Dissolve
            jump stanley
 
 label stanley:
+    "I open my eyes and find myself passed out in a non-descript parking lot."
+    "Still woozy, the birds tweeting nearby seem to spiral in circles around my head."
+    "*tweet tweet*"
+    "The air tinges my lungs as I attempt to breathe in this sticky, salty solution wafting around me"
+    "My ears perk up to a combination of grunts and clinking metal"
+    "*clink* *ungh* *clink*"
+    "I look above at the building in front of me"
+    "SWOLL INC., the sign reads"
+    "SYNERGIZING GIBBOUS SOLUTIONS SINCE 1997"
+    if stella_saw_starbuck == True:
+       "Why do I have a lingering desire for a caramel macchiato?"
+    else:
+       "A tingling sensation shoots through the entirety of my being as if a microscopic sea crustacean were slowly gnawing on my nervous system"
+    tiger "Dude, you look like you need some X1 Fiber Infused Kombucha"
+    "I whip towards this gentle voice"
+    s "Hey! Who are you? My day has been pretty tough"
+    tiger "Elon Musk said, 'tough times don't last, but tough people do'"
+    "One of his hands reaches out with an overflowing bottle of Fiber-bucha"
+    menu:
+        "Aggressively guzzle the Fiber-bucha":
+            $ belfort_points += 25;
+            "I immediately clamp my hands around the girthy container"
+            "I raise up this chalice of health and fitness and roar to the Gods"
+            "Like the glorious fountains of lore, I bathe myself in its golden, liquid delivery."
+            "I relish the individual, living microbes as they lusciously spurt over me"
+            "Kombuch-yeah."
+            tiger "Woah. Dude."
+            tiger "That was innovative."
+            s "Call me Stella, the Big Stella"
+            tiger "I'm Tiger, Tiger Mammal"
+
+            label buzzwords:
+                tiger "Innovation"
+                tiger "Synergy"
+                tiger "Local"
+                tiger "Organic"
+                tiger "Green Foods"
+                tiger "Joe Biden"
+                tiger "Benghazi"
+                tiger "Collaboration"
+                tiger "Right Brain Thinkers"
+                tiger "Scalable Server Technology"
+                tiger "The Green Cheddar"
+                tiger "High Frequency Trading"
+                tiger "Fracking"
+                tiger "Wealth Management"
+                tiger "Income. Inequality"
+                tiger "The Fiscal Cliff"
+                tiger "Super PACs"
+                tiger "Subprime Mortgage Loans"
+                tiger "Derivatives"
+                tiger "Subprime Mortgage Derivatives"
+                tiger "Sustainable"
+                tiger "Intuitive"
+                tiger "Snappy"
+                tiger "Viral"
+                tiger "Synergy"
+                tiger "Brain food"
+                tiger "Globalization"
+                tiger "Disruption"
+                tiger "Entrepreneurship"
+                tiger "Leadership"
+                tiger "These are all words"
+                tiger "Do they appeal to you?"
+    
+                menu: 
+                    "Yes. They indeed appeal":
+                        $ belfort_points += 5
+                    "Yes. Especially the wealth management one. Screwing over the average American family tickles me pink.":
+                        $ belfort_points += 25
+                    "No. They do not appeal to me":
+                        tiger "Did you hear me?"
+                        $ belfort_points -= 15
+                        jump buzzwords
+                tiger "Here, take my card"
+                "--TIGER MAMMAL: INNOVATIVE LEADER IN WEALTH MANAGEMENT--"
+                "--STORGAN MANLY (406)-529-9591--"
+                tiger "This world is full of these words"
+                tiger "You could be a leader in this space"
+                tiger "A leader."
+
+        "Slap the Fiber-bucha into his face":
+            $ belfort_points -= 20;
+            "Disgusted, I slap the Fiber-bucha into a miraculous array of bougie goodness across his face"
+            s "Um. No thanks, Kombucha is part of the milk industry and the milk industry ruins children's lives by paying billions of dollars to make them love milk when really biologically milk was never made for children just for kittens but I'm not a kitten so I don't want your corporate milk industry derived sheep of a sellout komubcha."
+            s "How about, Kombuch-NO"
+            "Tiger Mammal looks at me, dripping with yogurt drank"
+            tiger "I would be upset, but I will 'Turn the other cheek' as Michael Jacksón once said" 
+            menu:
+                "Lick the Fiber-bucha off of Tiger's Abercrombie abs":
+                    "I stick my tongue out"
+                    tiger "*sticks his tongue out*"
+                    "Gravity draws each of us like falling towers towards one another . . ."
+                    tiger "Wait, we need some Glotion™"
+                    tiger "It's an innovative combination of lotion and glue"
+                    tiger "It's great for children's craft and as a lubricant which gradually increases in friction"
+                    "Tiger Mammal walks over to the Glotion™ Vending machine and purchases several bottles"
+                    tiger "The machine gave me a few extra, do you want them?"
+                    menu:
+                        "Yes.":
+                            $ inventory['glotion'] = 10;
+                            s "Thanks!"
+                            "I put 10 bottles of Glotion™ in my back pocket"
+                        "No.":
+                            s "No Thanks. I prefer self-lubrication to the wonderful, creative, and ergonomic product that is Glotion™"
+                            tiger "You're loss. Glotion™ is the #1 trusted brand in glue lubricants."
+                            tiger "10/10 Lubricant Dr.s agree"
+                    "Tiger pours out a steaming pile of fresh Glotion™ into his cupped hands. He begins glotioning the nape of my neck."
+
+                "Slap him again":
+                    "I slap him back to childhood"
+                    babytiger ""
+                    babytiger "'Is it too late just to say sorry?'"
+                    babytiger "I'm a belieber it's not"
+                    "I slap him once more back to adulthood"
+            tiger "I need to go take a shower"
+
+    nimo "Tiger Mammal! Nani o shimasuka?!"
+    s "I withdraw my tongue"
+    tiger "Nimo! Ugh, I had already finished my single set of dumbell barbench curls. I'm spent."
+    nimo "Whatever Tiger, ugh."
+    nimo "Who are you?"
+    s "I am the Big Stella"
+    if stella_saw_shrimp == True:
+       s "... minion puppet of the crustacean underlord ..."
+
+    nimo "Aren't you giving that big speech today?"
+    s "OH MY! Yes, yes I am."
+    "I had almost forgotten! The biggest moment of my life!"
+    s "What time is it?"
+    nimo "Time to get you going! The Big Stella can't make the whole town wait!"
+    nimo "Come on, I'll give you a ride"
+    nimo "*wink*"
+    scene black
+    #with Dissolve
+    jump alpha_phi
+
+label alpha_phi:
