@@ -395,7 +395,7 @@ label alpha_phi:
         '*FROM: PUCAS POTATO*'
         '*Thinking about you Stella ;)*'
         '*PUCAS SENT A PHOTO*'
-        "Huh, I'd have to check that later"
+        "Huh, I'd have to check that later."
     else:
         '*ONE UNREAD MESSAGE*'
         '*FROM: DAD*'
@@ -403,5 +403,67 @@ label alpha_phi:
     'The big speech! I just needed to find my notes...'
     m 'Hey Stella.'
     s '*UAGH*'
-    "Maddie had snuck up on me."
-    "I was trapped, like a lone salmon who'd made the trecherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
+    "Maddie had snuck up on me!"
+    "I was trapped, like a lone salmon who'd made the treacherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
+    s "Hey Maddie... are you... ready for your speech?"
+    m "*scoff*"
+    m "I could ask you the same question."
+    s "Well, I can't seem to find my notes..."
+    m "Oh those? I used them as rolling papers."
+    m "Nice Bernie Sanders quotes in there. {i}reeeal{/i} original."
+    "I can't take this right now, the pettiness, the bad memories..."
+    s "Maddie, what do you want?"
+    m "I just wanted to know if you wanted to speak before or after me."
+    "I scrutinize her, searching for some genuine emotion in her icy eyes."
+    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
+    "Maddie always was one I never could get a read on."
+    "Her and..."
+    if Pucas_flirt == True:
+        s "...Pucas"
+        m "Pucas? Are you daydreaming about that nerd?"
+        "I must have said that out-loud."
+        s "n-n-no, I..."
+        m "*HA*"
+        m "Stella and Pucas siting in a tree"
+        m "B - E - I - N - G    G - D - Is"
+        menu:
+            "Ask Maddie what a GDI is":
+                s "GDI?"
+                m "Of course you wouldn't know what that is."
+                m "Talk to me next year at Yale."
+                m "My mom was president of her Sorority."
+                $ alpha_phi_points += 10
+            "Tell Maddie to Screw Off":
+                s "Screw Off, Maddie."
+                m "You can't talk to me that way."
+                m "Do you know who my mom is?"
+                $ alpha_phi_points -= 10
+    else:
+        s "...Tiger"
+        m "Tiger? He's pretty frat."
+        "I must have said that out-loud."
+        s "n-n-no, I..."
+        m "*HA*"
+        m "Stella. Tiger would {i}never{/i} be your friend."
+        m "You're a total GDI"
+        menu:
+            "Ask Maddie what a GDI is":
+                s "GDI?"
+                m "Of course you wouldn't know what that is."
+                m "Talk to me next year at Yale."
+                m "My mom was president of her Sorority."
+                $ alpha_phi_points += 10
+            "Tell Maddie to Screw Off":
+                s "Screw Off, Maddie."
+                m "You can't talk to me that way."
+                m "Do you know who my mom is?"
+                $ alpha_phi_points -= 10        
+    m "Do you know what she drives?"
+    m "A 2004 Subaru Cross-Trek."
+    "I'm not sure I've ever even seen that car."
+    m "A CROSS-TREK."
+    m "Anyways, what order do you want to speak?"
+    menu:
+        "Tell Maddie I want to speak first":
+            s "I want to go first."
+            $ alpha_phi_points +=25
