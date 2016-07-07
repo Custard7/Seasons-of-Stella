@@ -96,6 +96,7 @@ label Pucas_continue:
             "Licks the bottom of his shoe."
             "We both replace our shoes."
             p "Tacos sound good. Taco Bell at 5."
+            $ Pucas_flirt = True
     jump Pucas_goodbye
 
 label Pucas_goodbye:
@@ -388,3 +389,19 @@ label stanley:
     jump alpha_phi
 
 label alpha_phi:
+    "As Nimo dropped me off in front of the gymnasium, I hastily checked my phone."
+    if Pucas_flirt == True:
+        '*TWO UNREAD MESSAGES*'
+        '*FROM: PUCAS POTATO*'
+        '*Thinking about you Stella ;)*'
+        '*PUCAS SENT A PHOTO*'
+        "Huh, I'd have to check that later"
+    else:
+        '*ONE UNREAD MESSAGE*'
+        '*FROM: DAD*'
+        '*Where are you! They need you in the green room*!'
+    'The big speech! I just needed to find my notes...'
+    m 'Hey Stella.'
+    s '*UAGH*'
+    "Maddie had snuck up on me."
+    "I was trapped, like a lone salmon who'd made the trecherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
