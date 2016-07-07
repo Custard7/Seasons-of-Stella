@@ -331,6 +331,7 @@ label stanley:
                 tiger "This world is full of these words"
                 tiger "You could be a leader in this space"
                 tiger "A leader."
+                $ stanley_influence = True
 
         "Slap the Fiber-bucha into his face":
             $ belfort_points -= 20;
@@ -432,7 +433,7 @@ label alpha_phi:
                 m "Of course you wouldn't know what that is."
                 m "Talk to me next year at Yale."
                 m "My mom was president of her Sorority."
-                $ alpha_phi_points += 10
+                $ alpha_phi_points += 25
             "Tell Maddie to Screw Off":
                 s "Screw Off, Maddie."
                 m "You can't talk to me that way."
@@ -452,7 +453,7 @@ label alpha_phi:
                 m "Of course you wouldn't know what that is."
                 m "Talk to me next year at Yale."
                 m "My mom was president of her Sorority."
-                $ alpha_phi_points += 10
+                $ alpha_phi_points += 25
             "Tell Maddie to Screw Off":
                 s "Screw Off, Maddie."
                 m "You can't talk to me that way."
@@ -466,4 +467,47 @@ label alpha_phi:
     menu:
         "Tell Maddie I want to speak first":
             s "I want to go first."
-            $ alpha_phi_points +=25
+            $ alpha_phi_points +=15
+            m "Think you're a big dawg, huh?"
+            s "I'm really more of a big tiger."
+            if stella_saw_shrimp == True:
+                s "...destined to conquer this world for our subterranean master."
+            elif stanley_influence == True:
+                s "Ready to screw over some average American citizens!"
+                s "Like your mom."
+            elif Pucas_flirt == True:
+                s "A tigress in an empty den, just dreaming for my strong man-tiger to find me."
+            else:
+                s "A tiger with no direction in her life."
+            m "Wow, you really need to get some friends."
+            m "Well get out there, Everyone's waiting on you."
+
+        "Tell Maddie she can speak first.":
+            s "You can go first, I guess."
+            $ alpha_phi_points -= 15
+            m "Good old reliable Stella Belfort."
+            m "Never willing to step out of her comfort zone."
+            "Maddie was really irking the ol' nerves."
+            s "I do too!"
+            s "I had a day you wouldn't even be able to dream up."
+            if stella_saw_shrimp == True:
+                s "but soon, you and all your flunkies will be dreaming..."
+                s "...at the bottom of the sea."
+                s "Minions to our supreme creator."
+            elif stanley_influence == True:
+                s "And soon, I'll be on Wall Street."
+                s "Stacking bands and sipping on crisp Fiber-bucha"
+            elif Pucas_flirt == True:
+                s "And soon, the man of a generation will be mine."
+            else:
+                s "And soon, maybe I'll find some direction in my life."
+            s "Now I've got a speech to give."
+            m "After me, nerd."
+            "Maddie trounced out to the podium, leaving me in the green room to reflect on our constant feuding."
+            "Why did this girl hate me?"
+            "What could I do to make it stop?"
+            "Does she think I'm taking something away from her by giving a speech?"
+            "I hear the applause die down, and ready myself for the moment I would finally show the world Stella Belfort."
+
+label big_speech:
+
