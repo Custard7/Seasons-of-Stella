@@ -88,7 +88,7 @@ label Pucas_continue:
             p "Uh . . . Yeah, that works"
     
         "Lick my shoe":
-            $ pucas_points += 20
+            $ pucas_points += 40
             "I reach down to my foot, pull off my shoe, and give it a sloppy lick."
             p "Oh you like to lick shoes? Me too!"
             "He whips off his shoe, and with a big"
@@ -220,7 +220,7 @@ label post_brownie:
             jump stanley
     
         "I'll pass":
-           $ nicaragua_points -= 10
+           $ nicaragua_points -= 20
            $ stella_saw_starbuck = True;
 
            star "Really? What a nerd."
@@ -320,7 +320,7 @@ label stanley:
                     "Yes. They indeed appeal":
                         $ belfort_points += 5
                     "Yes. Especially the wealth management one. Screwing over the average American family tickles me pink.":
-                        $ belfort_points += 25
+                        $ belfort_points += 20
                     "No. They do not appeal to me":
                         tiger "Did you hear me?"
                         $ belfort_points -= 15
@@ -484,10 +484,10 @@ label alpha_phi:
 
         "Tell Maddie she can speak first.":
             s "You can go first, I guess."
-            $ alpha_phi_points -= 15
+            $ alpha_phi_points -= 5
             m "Good old reliable Stella Belfort."
             m "Never willing to step out of her comfort zone."
-            "Maddie was really irking the ol' nerves."
+            "Maddie was really irkin' the ol' nerves."
             s "I do too!"
             s "I had a day you wouldn't even be able to dream up."
             if stella_saw_shrimp == True:
