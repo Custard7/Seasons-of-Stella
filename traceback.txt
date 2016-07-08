@@ -1,0 +1,27 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/start.rpy", line 422, in script
+    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
+  File "game/start.rpy", line 422, in <module>
+    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
+NameError: name 'Pucas_flirt' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/start.rpy", line 422, in script
+    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/start.rpy", line 422, in <module>
+    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
+NameError: name 'Pucas_flirt' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 6.99.10.1227
+Seasons of Stella 0.0

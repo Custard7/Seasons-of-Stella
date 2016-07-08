@@ -5,7 +5,11 @@ label start:
     $ alpha_phi_points = 0
     $ nicaragua_points = 0
     $ belfort_points = 0
-
+    $ stanley_influence = False
+    $ Pucas_flirt = False
+    $ stella_saw_shrimp = False
+    $ stella_saw_starbuck = False
+    
     $ inventory = {};
     
     "9:52 Class of 2014 Sentinel Graduation"
@@ -45,7 +49,7 @@ label start:
     p "Maddie is giving a speech too, I heard. You two have always been so impressive."
     s "Oh, you're embarassing me!"
     "He jumps backwards, a furrow of concern in his brow."
-    p "I'm . . . I'm so sorry. I didn't mean to bother you."
+    p "I'm . . . I'm  so sorry. I didn't mean to bother you."
 
     menu:
          "What should I do?"
@@ -65,7 +69,9 @@ label start:
             "Alone."
             pause
             "He never talked again."
+            $ Pucas_flirt = False
             jump ganja
+
 
 label Pucas_continue:
     p "No."
@@ -86,6 +92,7 @@ label Pucas_continue:
             "I wink at him."
             "He immediately breaks eye contact."
             p "Uh . . . Yeah, that works"
+            $ Pucas_flirt = False
     
         "Lick my shoe":
             $ pucas_points += 40
@@ -508,6 +515,7 @@ label alpha_phi:
             "What could I do to make it stop?"
             "Does she think I'm taking something away from her by giving a speech?"
             "I hear the applause die down, and ready myself for the moment I would finally show the world Stella Belfort."
+            jump big_speech
 
 label big_speech:
 
