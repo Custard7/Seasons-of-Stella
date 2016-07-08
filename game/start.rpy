@@ -9,7 +9,7 @@ label start:
     $ Pucas_flirt = False
     $ stella_saw_shrimp = False
     $ stella_saw_starbuck = False
-    
+
     $ inventory = {};
     
     "9:52 Class of 2014 Sentinel Graduation"
@@ -488,6 +488,7 @@ label alpha_phi:
                 s "A tiger with no direction in her life."
             m "Wow, you really need to get some friends."
             m "Well get out there, Everyone's waiting on you."
+            jump big_speech
 
         "Tell Maddie she can speak first.":
             s "You can go first, I guess."
