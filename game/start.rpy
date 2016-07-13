@@ -519,4 +519,81 @@ label alpha_phi:
             jump big_speech
 
 label big_speech:
+    "An expanse of eager faces lies in front of me."
+    "Everyone's waiting."
+    "Anticipating."
+    "Excited to hear what I have to tell them."
+    airhorn "*BWWWWWAAAAAAAAAAAAAAH*"
+    "I don't have my notes, I'll have to ad-lib."
+    s "Students, teachers, and honored guests, I'm blessed to stand before you today."
+    s "High School was a time for us to learn about ourselves."
+    s "Learn about our goals."
+    s "Our ambitions."
+    s "And maybe even find a little love along the way."
+    if Pucas_flirt == True:
+        p "*blush*"
+        jump speech_continue
+    else:
+        jump speech_continue
+label speech_continue:
+    s "Next year, we'll be off around the world, doing great things."
+    s "College will be a different time, with new friends and new things to learn."
+    s "But it's always important to remember everyone who helped you along the way."
+    s "Your friends who offered their help when you needed it most."
+    s "Even your enemies who pushed you to be the best person you could be."
+    airhorn "*BWWWWWAAAAAAAAAAAAAAH*"
+    s "I'd like to thank my fellow students for choosing me to speak at graduation."
+    airhorn "*BWAA-BWAAAA-BWWWWWAAAAAAAAAAAAAAH*"
+
+    #Choose path here!
+    if max(alpha_phi_points, pucas_points, belfort_points, nicaragua_points) == alpha_phi_points:
+        s "Next year, I'm excited to attend Yale University."
+        s "I hope to meet many new people there."
+        s "And climb to the very top of the social ladder."
+        airhorn "*BWWWWWAAAAAAAAAAAAAAH*"
+        "Maddie gives me the finger."
+        s "And soon, I'll have so many friends, I won't even need you suckers!"
+        s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
+        "The gym erupts in applause, and I am content."
+        jump alphaphi
+
+    elif max(alpha_phi_points, pucas_points, belfort_points, nicaragua_points) == pucas_points:
+        s "Tonight, I'll embark on the date of my life with a wonderful man."
+        s "A man who's luscious blonde locks make me feel things I've never felt before."
+        s "Taco Bell."
+        s "A beefy five layer burrito"
+        s "5 PM tonight."
+        s "Sparks will fly."
+        s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
+        "The gym erupts in applause, and I am content."
+        jump pucas
+
+
+    elif max(alpha_phi_points, pucas_points, belfort_points, nicaragua_points) == belfort_points:
+        s "Today, I discovered a new passion."
+        s "A passion for cheddar."
+        s "Fat stacks."
+        s "The benjamins."
+        s "Racks on racks."
+        s "Decimals and commas."
+        s "Dat moo-lah."
+        s "And next year, I'm going to pursue the fantasy I never knew I had:"
+        s "Screwing over the average American family."
+        s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
+        "The gym erupts in applause, and I am content."
+        jump belfort
+
+
+    elif max(alpha_phi_points, pucas_points, belfort_points, nicaragua_points) == nicaragua_points:
+        s "It's important to remember that our life is so short."
+        s "We have to make sure we have a little fun along the way."
+        s "Which is why next year I plan to smoke 'da green ganja in Nicaragua."
+        s "Searching for more to fight the good fight..."
+        s "For our glorious leader..."
+        s "Darmascula."
+        s "All hail."
+        s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
+        "The gym erupts in applause, and I am content."
+        jump nicaragua
+
 

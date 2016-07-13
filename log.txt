@@ -1,16 +1,16 @@
-Thu Jul 07 20:22:29 2016
+Fri Jul 08 23:07:48 2016
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
  
 
-Bootstrap to the start of init.init took 0.10s
-Early init took 0.02s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.31s
+Bootstrap to the start of init.init took 0.11s
+Early init took 0.05s
+Loader init took 0.07s
+Loading error handling took 0.05s
+Loading script took 1.19s
 Loading persistent took 0.02s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Running init code took 0.12s
+Running init code took 0.56s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Index archives took 0.00s
@@ -19,7 +19,7 @@ Dump and make backups. took 0.08s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 DPI scale factor: 1.500000
-Creating interface object took 0.04s
+Creating interface object took 0.09s
 Cleaning stores took 0.00s
 Init translation took 0.00s
 Build styles took 0.00s
@@ -257,65 +257,18 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 1.8599998951s
+Total time until interface ready: 4.20800018311s
 - Target is 5 frames in 0.333333333333 seconds.
 - Frame drawn at 0.000000 seconds.
-- Frame drawn at 0.026000 seconds.
-- Frame drawn at 0.045000 seconds.
-- Frame drawn at 0.063000 seconds.
-- Frame drawn at 0.080000 seconds.
-- 0.080000 seconds to render 5 frames.
-Traceback (most recent call last):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/start.rpy", line 394, in <module>
-    if Pucas_flirt == True:
-NameError: name 'Pucas_flirt' is not defined
-The window was minimized.
-The window was restored.
-
-primary display bounds: (0, 0, 1920, 1080)
-Windowed mode.
-Screen sizes: virtual=(800, 600) physical=(1200, 900) drawable=(1200, 900)
-Traceback (most recent call last):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/start.rpy", line 394, in <module>
-    
-NameError: name 'Pucas_flirt' is not defined
-Traceback (most recent call last):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/start.rpy", line 394, in <module>
-    
-NameError: name 'Pucas_flirt' is not defined
-Traceback (most recent call last):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
-    if renpy.python.py_eval(condition):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1606, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/start.rpy", line 422, in <module>
-    "Is she asking me out of genuine kindness, or is this another one of her trademark power plays?"
-NameError: name 'Pucas_flirt' is not defined
+- Frame drawn at 0.027000 seconds.
+- Frame drawn at 0.049000 seconds.
+- Frame drawn at 0.066000 seconds.
+- Frame drawn at 0.082000 seconds.
+- 0.082000 seconds to render 5 frames.
+Cleaning stores took 0.00s
+Init translation took 0.10s
+Build styles took 0.00s
+Load screen analysis took 0.01s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s

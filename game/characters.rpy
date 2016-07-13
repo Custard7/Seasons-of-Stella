@@ -8,4 +8,5 @@ define shrimp = Character('Darmascula', color="#FFC0CB")
 define tiger = Character('Tiger Mammal', color="#AA1111")
 define babytiger = Character('Baby Tiger', color="#2233FF")
 define nimo = Character('Nimo', color="#AAAAAA")
+define airhorn = Character('Airhorn',color="#FFFF00")
 return
