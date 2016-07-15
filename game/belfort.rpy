@@ -34,15 +34,15 @@ label belfort:
     s "I was hoping I would find you here!"
     tiger "Ready for your first day of leadership and success?"
     menu:
-        "Ready? Huh, on my birthing table I cut my own umbilical cord with a Visa™ Credit Card and exercised my first Stock Option Agreement"
+        "Ready? Huh, on my birthing table I cut my own umbilical cord with a Visa™ Credit Card and exercised my first Stock Option Agreement":
             $ dominance += 100
-        "I sure hope so! I'm very excited to be working with you!"
+        "I sure hope so! I'm very excited to be working with you!":
             $ dominance -= 10
             $ favorability_taiga += 100
-        "More prepared than you are"
+        "More prepared than you are":
             $ dominance += 75
             $ favorability_taiga -= 20
-        "I have no idea what I'm doing here"
+        "I have no idea what I'm doing here":
             $ dominance -= 50
 
     #Boss is going to prep Stella on what it means to work for morgan stanley
