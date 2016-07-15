@@ -2,6 +2,8 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 42: Tab characters are not allowed in Ren'Py scripts.
+File "game/belfort.rpy", line 39: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
+    "I sure hope so! I'm very excited to be working with you!"
+                                                              ^
 
 Ren'Py Version: Ren'Py 6.99.10.1227
