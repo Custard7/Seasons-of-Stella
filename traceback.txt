@@ -1,24 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/characters.rpy", line 20, in script
-    define durks = Chracter('The Durks', color = "#42b879")
-  File "game/characters.rpy", line 20, in <module>
-    define durks = Chracter('The Durks', color = "#42b879")
-NameError: name 'Chracter' is not defined
+  File "game/alphaphi.rpy", line 25, in script
+    cgod "Do you want to pull?"
+Exception: Sayer 'cgod' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/characters.rpy", line 20, in script
-    define durks = Chracter('The Durks', color = "#42b879")
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1794, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/characters.rpy", line 20, in <module>
-    define durks = Chracter('The Durks', color = "#42b879")
-NameError: name 'Chracter' is not defined
+  File "game/alphaphi.rpy", line 25, in script
+    cgod "Do you want to pull?"
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 584, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 501, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'cgod' is not defined.
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
