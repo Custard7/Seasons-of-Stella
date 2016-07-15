@@ -9,4 +9,11 @@ define tiger = Character('Tiger Mammal', color="#AA1111")
 define babytiger = Character('Baby Tiger', color="#2233FF")
 define nimo = Character('Nimo', color="#AAAAAA")
 define airhorn = Character('Airhorn',color="#FFFF00")
-return
+define Mom = Character('Mom' ,color="00ff00")
+define Joseph = Character('Joseph' ,color="FF0000")
+define jacques = Character('Jàçqüés' ,color="ABCDEF")
+define zach = Character('Zach', color="BBAAff")
+define saki = Character('SakiSaki-chan', color="ff66ff")
+define Prof = Character('Professor Fukklesprout', color="ccff66")
+define Frito = Character('Frito Cubby', color="ccaadd")
+return 
