@@ -1,3 +1,16 @@
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
-
+image black = "#000000"
+image white = "#FFFFFF"
+image gym far = "gym_far.jpg"
+image gym close = "gym_close.jpg"
+image love basic = "love_basic.jpg"
+image past playground = "past_playground.jpg"
+image past woodchips = "past_woodchips.jpg"
+image mystic swirl = "mystic_swirl.jpg"
+image storgan front = "storgan_front.jpg"
+image parking lot = "parking_lot.jpg"
+image parking storefront = "parking_storefront.jpg"
+image greenroom = "greenroom.jpg"
+image speech giving = "speech_giving.jpg"
+image speech finish = "speech_finish.jpg"
