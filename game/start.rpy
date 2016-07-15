@@ -9,6 +9,7 @@ label start:
     $ Pucas_flirt = False
     $ stella_saw_shrimp = False
     $ stella_saw_starbuck = False
+    $ tiger_lick = False
 
     $ inventory = {};
     
@@ -23,26 +24,26 @@ label start:
     #Dissolve to black
     #Chapter 1
 
-    "I look around the hall, at the hundreds of students just like me. Waiting in anticipation from the sweet, hot release of graduation"
-    "Finally, I'm ready. Ready to leave this life of being a big fish in a small pond"
+    "I look around the hall, at the hundreds of students just like me. Waiting in anticipation from the sweet, hot release of graduation."
+    "Finally, I'm ready. Ready to leave this life of being a big fish in a small pond."
     "High school was filled with drama..."
-    "Across the crowded hall, an icy pair of peepers catches my eyes"
+    "Across the crowded hall, an icy pair of peepers catches my eyes."
     "Of course it's Maddie Velvet, the girl who's been out to get me since I beat her in the 3rd grade grill-off."
     "She begins to stalk towards me, a predator in action."
     "This has been a long time coming. And you know, I might deserve it. Because-"
     
     p "Hey Stella!"
     
-    "I whip around, surprised, upon hearing my name"
-    "It's none other than Pucas P. Potato"
-    "His long, fluffy blonde hair flows elegantly as he speaks. He's tall, handsome, with a rugged, masculine exterior"
+    "I whip around, surprised, upon hearing my name."
+    "It's none other than Pucas P. Potato."
+    "His long, fluffy blonde hair flows elegantly as he speaks. He's tall, handsome, with a rugged, masculine exterior."
     "The last time I'd talked to Pucas, we'd . . . "
     "Well, let's just say we didn't talk."
     "I'm too nervous to say anything other than-"
     s "Pucas. Hi, um. Congrats!"
-    p "Congrats to me? No way, it's all on you! You're the one giving a big speech"
+    p "Congrats to me? No way, it's all on you! You're the one giving a big speech."
     "He pats me on the back. Is he patronizing me?"
-    s "No, not at all. It's not that big of a deal"
+    s "No, not at all. It's not that big of a deal."
     "I remember Maddie was on her way over."
     "Behind me, I see her, pacing, waiting for Pucas to leave."
     "I'm safe for now."
@@ -61,14 +62,14 @@ label start:
 
          "Ride him like a pony.":
             $ pucas_points -= 50
-            s "I'm going to ride you like a pony"
+            s "I'm going to ride you like a pony."
             "That happened."
-            "Afterwards, Pucas just kept staring at me. It was strange, sort of mystifying. It was as if his eyes were large black holes."
-            "Inside those black holes was the old Pucas."
+            "Pucas stares at me. It's strange, sort of mystifying. It's as if his eyes were large black holes."
+            "Inside those black holes is the old Pucas."
             "Stuck."
             "Alone."
             pause
-            "He never talked again."
+            "He may never talk again."
             $ Pucas_flirt = False
             jump ganja
 
@@ -76,7 +77,7 @@ label start:
 label Pucas_continue:
     p "No."
     "I'm shocked. I've never been turned down by a boy, let alone . . . "
-    "Pucas"
+    "Pucas."
     "He runs a hand through his hair, blushing."
     p "I'm sorry, I just don't like eating lunch. Dinner's fine though."
     "I chuckle to myself. Typical Pucas."
@@ -87,14 +88,14 @@ label Pucas_continue:
     menu:
         "What should I do?"
     
-        "Give him the ol' winkeroo":
+        "Give him the ol' winkeroo.":
             $ pucas_points -= 10
             "I wink at him."
             "He immediately breaks eye contact."
-            p "Uh . . . Yeah, that works"
+            p "Uh . . . Yeah, that works."
             $ Pucas_flirt = False
     
-        "Lick my shoe":
+        "Lick my shoe.":
             $ pucas_points += 40
             "I reach down to my foot, pull off my shoe, and give it a sloppy lick."
             p "Oh you like to lick shoes? Me too!"
@@ -166,7 +167,7 @@ label ganja:
             star "But I thought you loved my mom's cooking!"
             "I freeze. I DO love her mom's cooking."
             s "I didn't know your mom made it! I thought it was special, like . . . "
-            "I look at her knowingly"
+            "I look at her knowingly."
             s "Green ganja?"
             star "Seriously?"
             "She scoffs."
@@ -200,7 +201,7 @@ label post_brownie:
             "I gaze into the eyes."
             "The eyes."
             "A chasmous, neverending maelstrom of antediluvian power looms beneath surface of these inky black bulbs."
-            shrimp "Forgive"
+            shrimp "Forgive."
             "What is this voice?"
             shrimp "Exists no other lung save for the one through which thee breatheth."
             "A high-pitched whine rises above the chatter."
@@ -226,16 +227,16 @@ label post_brownie:
             #with Dissolve
             jump stanley
     
-        "I'll pass":
+        "I'll pass.":
            $ nicaragua_points -= 20
            $ stella_saw_starbuck = True;
 
            star "Really? What a nerd."
            s "Excuse me?"
            star "Yeah, you nerd. NERD. NERDY NERD."
-           s "You don't have to be so pretentious"
+           s "You don't have to be so pretentious."
            star "What do you mean {i}pretentious{/i}?"
-           "She asked for it"
+           "She asked for it."
            "I walk up to Starbuck, nose to nose. Stare her down in the eye."
            s "Underneath that eyepatch, you're nothing more than a smelly, fuzzy-"
            "WHIIIRRRRR"
@@ -261,33 +262,33 @@ label stanley:
     "I open my eyes and find myself passed out in a non-descript parking lot."
     "Still woozy, the birds tweeting nearby seem to spiral in circles around my head."
     "*tweet tweet*"
-    "The air tinges my lungs as I attempt to breathe in this sticky, salty solution wafting around me"
-    "My ears perk up to a combination of grunts and clinking metal"
+    "The air tinges my lungs as I attempt to breathe in this sticky, salty solution wafting around me."
+    "My ears perk up to a combination of grunts and clinking metal."
     "*clink* *ungh* *clink*"
-    "I look above at the building in front of me"
-    "SWOLL INC., the sign reads"
+    "I look above at the building in front of me."
+    "SWOLL INC., the sign reads."
     "SYNERGIZING GIBBOUS SOLUTIONS SINCE 1997"
     if stella_saw_starbuck == True:
        "Why do I have a lingering desire for a caramel macchiato?"
     else:
-       "A tingling sensation shoots through the entirety of my being as if a microscopic sea crustacean were slowly gnawing on my nervous system"
-    tiger "Dude, you look like you need some X1 Fiber Infused Kombucha"
-    "I whip towards this gentle voice"
-    s "Hey! Who are you? My day has been pretty tough"
-    tiger "Elon Musk said, 'tough times don't last, but tough people do'"
-    "One of his hands reaches out with an overflowing bottle of Fiber-bucha"
+       "A tingling sensation shoots through the entirety of my being as if a microscopic sea crustacean were slowly gnawing on my nervous system."
+    tiger "Dude, you look like you need some X1 Fiber Infused Kombucha."
+    "I whip towards this gentle voice."
+    s "Hey! Who are you? My day has been pretty tough."
+    tiger "Elon Musk said, 'tough times don't last, but tough people do.'"
+    "One of his hands reaches out with an overflowing bottle of Fiber-bucha."
     menu:
-        "Aggressively guzzle the Fiber-bucha":
+        "Aggressively guzzle the Fiber-bucha.":
             $ belfort_points += 25;
-            "I immediately clamp my hands around the girthy container"
-            "I raise up this chalice of health and fitness and roar to the Gods"
+            "I immediately clamp my hands around the girthy container."
+            "I raise up this chalice of health and fitness and roar to the Gods."
             "Like the glorious fountains of lore, I bathe myself in its golden, liquid delivery."
-            "I relish the individual, living microbes as they lusciously spurt over me"
+            "I relish the individual, living microbes as they lusciously spurt over me."
             "Kombuch-yeah."
             tiger "Woah. Dude."
             tiger "That was innovative."
-            s "Call me Stella, the Big Stella"
-            tiger "I'm Tiger, Tiger Mammal"
+            s "Call me Stella, the Big Stella."
+            tiger "I'm Tiger, Tiger Mammal."
 
             label buzzwords:
                 tiger "Innovation"
@@ -304,7 +305,7 @@ label stanley:
                 tiger "High Frequency Trading"
                 tiger "Fracking"
                 tiger "Wealth Management"
-                tiger "Income. Inequality"
+                tiger "Income Inequality"
                 tiger "The Fiscal Cliff"
                 tiger "Super PACs"
                 tiger "Subprime Mortgage Loans"
@@ -324,64 +325,66 @@ label stanley:
                 tiger "Do they appeal to you?"
     
                 menu: 
-                    "Yes. They indeed appeal":
+                    "Yes. They indeed appeal.":
                         $ belfort_points += 5
                     "Yes. Especially the wealth management one. Screwing over the average American family tickles me pink.":
                         $ belfort_points += 20
-                    "No. They do not appeal to me":
+                    "No. They do not appeal to me.":
                         tiger "Did you hear me?"
                         $ belfort_points -= 15
                         jump buzzwords
-                tiger "Here, take my card"
+                tiger "Here, take my card."
                 "--TIGER MAMMAL: INNOVATIVE LEADER IN WEALTH MANAGEMENT--"
                 "--STORGAN MANLY (406)-529-9591--"
-                tiger "This world is full of these words"
-                tiger "You could be a leader in this space"
+                tiger "This world is full of these words."
+                tiger "You could be a leader in this space."
                 tiger "A leader."
                 $ stanley_influence = True
 
-        "Slap the Fiber-bucha into his face":
+        "Slap the Fiber-bucha into his face.":
             $ belfort_points -= 20;
-            "Disgusted, I slap the Fiber-bucha into a miraculous array of bougie goodness across his face"
+            "Disgusted, I slap the Fiber-bucha into a miraculous array of bougie goodness across his face."
             s "Um. No thanks, Kombucha is part of the milk industry and the milk industry ruins children's lives by paying billions of dollars to make them love milk when really biologically milk was never made for children just for kittens but I'm not a kitten so I don't want your corporate milk industry derived sheep of a sellout komubcha."
-            s "How about, Kombuch-NO"
-            "Tiger Mammal looks at me, dripping with yogurt drank"
-            tiger "I would be upset, but I will 'Turn the other cheek' as Michael Jacksón once said" 
+            s "How about, Kombuch-NO."
+            "Tiger Mammal looks at me, dripping with yogurt drank."
+            tiger "I would be upset, but I will 'Turn the other cheek' as Michael Jacksón once said." 
             menu:
-                "Lick the Fiber-bucha off of Tiger's Abercrombie abs":
+                "Lick the Fiber-bucha off of Tiger's Abercrombie abs.":
                     "I stick my tongue out"
                     tiger "*sticks his tongue out*"
+                    $ tiger_lick == True
                     "Gravity draws each of us like falling towers towards one another . . ."
-                    tiger "Wait, we need some Glotion™"
-                    tiger "It's an innovative combination of lotion and glue"
-                    tiger "It's great for children's craft and as a lubricant which gradually increases in friction"
-                    "Tiger Mammal walks over to the Glotion™ Vending machine and purchases several bottles"
+                    tiger "Wait, we need some Glotion™."
+                    tiger "It's an innovative combination of lotion and glue."
+                    tiger "It's great for children's craft and as a lubricant which gradually increases in friction."
+                    "Tiger Mammal walks over to the Glotion™ Vending machine and purchases several bottles."
                     tiger "The machine gave me a few extra, do you want them?"
                     menu:
                         "Yes.":
                             $ inventory['glotion'] = 10;
                             s "Thanks!"
-                            "I put 10 bottles of Glotion™ in my back pocket"
+                            "I put 10 bottles of Glotion™ in my back pocket."
                         "No.":
-                            s "No Thanks. I prefer self-lubrication to the wonderful, creative, and ergonomic product that is Glotion™"
+                            s "No Thanks. I prefer self-lubrication to the wonderful, creative, and ergonomic product that is Glotion™."
                             tiger "You're loss. Glotion™ is the #1 trusted brand in glue lubricants."
-                            tiger "10/10 Lubricant Dr.s agree"
+                            tiger "10/10 Lubricant Dr.s agree."
                     "Tiger pours out a steaming pile of fresh Glotion™ into his cupped hands. He begins glotioning the nape of my neck."
 
-                "Slap him again":
-                    "I slap him back to childhood"
+                "Slap him again.":
+                    "I slap him back to childhood."
                     babytiger ""
                     babytiger "'Is it too late just to say sorry?'"
-                    babytiger "I'm a belieber it's not"
-                    "I slap him once more back to adulthood"
-            tiger "I need to go take a shower"
+                    babytiger "I'm a belieber it's not."
+                    "I slap him once more back to adulthood."
+            tiger "I need to go take a shower."
 
     nimo "Tiger Mammal! Nani o shimasuka?!"
-    s "I withdraw my tongue"
+    if tiger_lick == True:
+        s "I withdraw my tongue"
     tiger "Nimo! Ugh, I had already finished my single set of dumbell barbench curls. I'm spent."
     nimo "Whatever Tiger, ugh."
     nimo "Who are you?"
-    s "I am the Big Stella"
+    s "I am the Big Stella."
     if stella_saw_shrimp == True:
        s "... minion puppet of the crustacean underlord ..."
 
@@ -390,14 +393,14 @@ label stanley:
     "I had almost forgotten! The biggest moment of my life!"
     s "What time is it?"
     nimo "Time to get you going! The Big Stella can't make the whole town wait!"
-    nimo "Come on, I'll give you a ride"
+    nimo "Come on, I'll give you a ride."
     nimo "*wink*"
     scene black
     #with Dissolve
     jump alpha_phi
 
 label alpha_phi:
-    "As Nimo dropped me off in front of the gymnasium, I hastily checked my phone."
+    "As Nimo drops me off in front of the gymnasium, I hastily check my phone."
     if Pucas_flirt == True:
         '*TWO UNREAD MESSAGES*'
         '*FROM: PUCAS POTATO*'
@@ -408,11 +411,11 @@ label alpha_phi:
         '*ONE UNREAD MESSAGE*'
         '*FROM: DAD*'
         '*Where are you! They need you in the green room*!'
-    'The big speech! I just needed to find my notes...'
+    'The big speech! I just need to find my notes...'
     m 'Hey Stella.'
     s '*UAGH*'
     "Maddie had snuck up on me!"
-    "I was trapped, like a lone salmon who'd made the treacherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
+    "I'm trapped', like a lone salmon who'd made the treacherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
     s "Hey Maddie... are you... ready for your speech?"
     m "*scoff*"
     m "I could ask you the same question."
@@ -432,16 +435,16 @@ label alpha_phi:
         "I must have said that out-loud."
         s "n-n-no, I..."
         m "*HA*"
-        m "Stella and Pucas siting in a tree"
+        m "Stella and Pucas siting in a tree."
         m "B - E - I - N - G    G - D - Is"
         menu:
-            "Ask Maddie what a GDI is":
+            "Ask Maddie what a GDI is.":
                 s "GDI?"
                 m "Of course you wouldn't know what that is."
                 m "Talk to me next year at Yale."
                 m "My mom was president of her Sorority."
                 $ alpha_phi_points += 25
-            "Tell Maddie to Screw Off":
+            "Tell Maddie to Screw Off.":
                 s "Screw Off, Maddie."
                 m "You can't talk to me that way."
                 m "Do you know who my mom is?"
@@ -453,15 +456,15 @@ label alpha_phi:
         s "n-n-no, I..."
         m "*HA*"
         m "Stella. Tiger would {i}never{/i} be your friend."
-        m "You're a total GDI"
+        m "You're a total GDI."
         menu:
-            "Ask Maddie what a GDI is":
+            "Ask Maddie what a GDI is.":
                 s "GDI?"
                 m "Of course you wouldn't know what that is."
                 m "Talk to me next year at Yale."
                 m "My mom was president of her Sorority."
                 $ alpha_phi_points += 25
-            "Tell Maddie to Screw Off":
+            "Tell Maddie to Screw Off.":
                 s "Screw Off, Maddie."
                 m "You can't talk to me that way."
                 m "Do you know who my mom is?"
@@ -472,7 +475,7 @@ label alpha_phi:
     m "A CROSS-TREK."
     m "Anyways, what order do you want to speak?"
     menu:
-        "Tell Maddie I want to speak first":
+        "Tell Maddie I want to speak first.":
             s "I want to go first."
             $ alpha_phi_points +=15
             m "Think you're a big dawg, huh?"
@@ -495,7 +498,7 @@ label alpha_phi:
             $ alpha_phi_points -= 5
             m "Good old reliable Stella Belfort."
             m "Never willing to step out of her comfort zone."
-            "Maddie was really irkin' the ol' nerves."
+            "Maddie is really irkin' the ol' nerves."
             s "I do too!"
             s "I had a day you wouldn't even be able to dream up."
             if stella_saw_shrimp == True:
@@ -504,7 +507,7 @@ label alpha_phi:
                 s "Minions to our supreme creator."
             elif stanley_influence == True:
                 s "And soon, I'll be on Wall Street."
-                s "Stacking bands and sipping on crisp Fiber-bucha"
+                s "Stacking bands and sipping on crisp Fiber-bucha."
             elif Pucas_flirt == True:
                 s "And soon, the man of a generation will be mine."
             else:
@@ -561,7 +564,7 @@ label speech_continue:
         s "Tonight, I'll embark on the date of my life with a wonderful man."
         s "A man who's luscious blonde locks make me feel things I've never felt before."
         s "Taco Bell."
-        s "A beefy five layer burrito"
+        s "A beefy five layer burrito."
         s "5 PM tonight."
         s "Sparks will fly."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
