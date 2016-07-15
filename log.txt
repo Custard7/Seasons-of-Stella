@@ -1,27 +1,37 @@
-Fri Jul 15 14:02:24 2016
+Fri Jul 15 14:03:33 2016
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
  
 
-Bootstrap to the start of init.init took 0.11s
-Early init took 0.04s
+Bootstrap to the start of init.init took 0.10s
+Early init took 0.02s
 Loader init took 0.02s
-Loading error handling took 0.05s
-Loading script took 1.17s
-Loading persistent took 0.02s
+Loading error handling took 0.02s
+Loading script took 0.16s
+Loading persistent took 0.01s
 Importing _renpysteam: ImportError('No module named _renpysteam',)
-Traceback (most recent call last):
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
-    node.execute()
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1794, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1601, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/characters.rpy", line 20, in <module>
-    define durks = Chracter('The Durks', color = "#42b879")
-NameError: name 'Chracter' is not defined
+Running init code took 0.14s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\Ezekiel\\AppData\\Roaming/RenPy/backups\\seasons-of-stella':
+Dump and make backups. took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
 DPI scale factor: 1.500000
-Interface start took 0.61s
+Creating interface object took 0.03s
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.08s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.05s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.01s
 Couldn't import angle renderer:
 Traceback (most recent call last):
   File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\display\core.py", line 1702, in make_draw
@@ -247,4 +257,19 @@ Texture testing:
 - 512px textures work.
 - 1024px textures work.
 - 2048px textures work.
-Total time until interface ready: 3.41000008583s
+Total time until interface ready: 1.23500013351s
+- Target is 5 frames in 0.333333333333 seconds.
+- Frame drawn at 0.000000 seconds.
+- Frame drawn at 0.018000 seconds.
+- Frame drawn at 0.030000 seconds.
+- Frame drawn at 0.047000 seconds.
+- Frame drawn at 0.062000 seconds.
+- 0.062000 seconds to render 5 frames.
+Traceback (most recent call last):
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 408, in run
+    node.execute()
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 584, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 501, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who.encode("utf-8"))
+Exception: Sayer 'cgod' is not defined.

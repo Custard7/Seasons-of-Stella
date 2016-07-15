@@ -4,7 +4,7 @@ label alphaphi:
     $ inventory = {}
 
 
-    centered "==Fall=="
+    centered "Fall"
     "Eyes wide, I step off the 747 and into the sweet, sticky, September, New-Haven air."
     "To my right, an old couple argues with a gate agent."
     "To my left, a moose gallivants across the tarmac."
@@ -22,7 +22,7 @@ label alphaphi:
     "All around me, clubs and societies woo new students."
     cdog "Welcome, pledges!"
     durks "Do you want to party hard?"
-    cgod "Do you want to pull?"
+    cdod "Do you want to pull?"
     durks "Do you want to be the smartest man on campus?"
     cdog "Do you want to be part of the freshest fraternity around?"
     durks "Come on down to the Sigma Chi house this Thursday for a recruitment kickback!"
