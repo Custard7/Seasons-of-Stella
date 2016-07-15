@@ -335,7 +335,7 @@ label stanley:
                         jump buzzwords
                 tiger "Here, take my card."
                 "--TIGER MAMMAL: INNOVATIVE LEADER IN WEALTH MANAGEMENT--"
-                "--STORGAN MANLY (406)-529-9591--"
+                "--STORGAN MANLY (406)-830-5053--"
                 tiger "This world is full of these words."
                 tiger "You could be a leader in this space."
                 tiger "A leader."
