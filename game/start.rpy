@@ -568,7 +568,7 @@ label speech_continue:
         "Maddie gives me the finger."
         s "And soon, I'll have so many friends, I won't even need you suckers!"
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech f
+        show bg speech finish
         "The gym erupts in applause, and I am content."
         jump alphaphi
 
@@ -580,7 +580,7 @@ label speech_continue:
         s "5 PM tonight."
         s "Sparks will fly."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech f
+        show bg speech finish
         "The gym erupts in applause, and I am content."
         jump pucas
 
@@ -596,7 +596,7 @@ label speech_continue:
         s "And next year, I'm going to pursue the fantasy I never knew I had:"
         s "Screwing over the average American family."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech f
+        show bg speech finish
         "The gym erupts in applause, and I am content."
         jump belfort
 
