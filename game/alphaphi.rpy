@@ -4,9 +4,9 @@ label alphaphi:
     $ anti_frat = False
     $ anti_nerd = False
 
-
+    show bg black
     centered "Fall"
-    #show bg airport
+    show bg airport
     "Eyes wide, I step off the 747 and into the sweet, sticky, September, New-Haven air."
     "To my right, an old couple argues with a gate agent."
     "To my left, a moose gallivants across the tarmac."
@@ -23,6 +23,7 @@ label alphaphi:
     "I jump out of the car, dump my rucksack in my new dorm room and rush out to make new friends."
     "I wonder who my roommate will be!"
     "All around me, clubs and societies woo new students."
+    show bg quad_closeup
     cdog "Welcome, pledges!"
     durks "Do you want to party hard?"
     cdog "Do you want to pull?"
@@ -34,7 +35,6 @@ label alphaphi:
 
     menu:
         "Talk to the frat bros.":
-            #show bg quad_closeup
             s "Aren't you being a little sexist?"
             durks "I think you mean {i}sex-iest{/i}!"
             cdog "ha {i}HA{/i}!"
@@ -60,7 +60,6 @@ label alphaphi:
             jump club_intros
         
         "Flip off the frat bros.":
-            #show bg quad_close_up
             s "Fuck you, you sexist pigs!"
             durks "Ouch."
             durks "Brother, my feelings are a little hurt."
@@ -73,6 +72,7 @@ label alphaphi:
             jump club_intros
 
         "Walk by the frat bros.":
+            show bg quad_busy
             "I'm really not in the mood for an argument on social issues right now."
             "I walk on by as the frat bros continue their loud calls."
             "I'm sure I'll meet those two again later."
@@ -90,7 +90,7 @@ label club_intros:
     "Those all sound lame."
     "A sign catches the corner of my eye."
     "*Astronomy Club*"
-    #show bg quad_closeup
+    show bg quad_closeup
     s "I love astrology!"
     lassi "Actually, this is astronomy club. The study of celestial bodies."
     lassi "Astrology isn't real."
@@ -127,7 +127,7 @@ label aphi_intro:
     show bg quad_busy
     "I can see that Maddie's left the sorority recruitment table."
     "Slowly, I jaunt over to check out what she was up to."
-    #show bg quad_closeup
+    show bg quad_closeup
     stormee "Hi There!"
     "A bright, jovial voice interrupts my internal monologue."
     stormee "I'm Stormee, president of Alpha Phi sorority here at Yale! Who are you?"
@@ -140,9 +140,14 @@ label aphi_intro:
     s "Who's that?"
     stormee "Oh, that's Keith! He's our house pet!"
     k "*hu-ugh*"
-    stormy "Do you want to know more about joining a sorority?"
+    stormee "Do you want to know more about joining a sorority?"
     if anti_nerd == True and anti_frat == True:
         "I should probably join at least one club here..."
+        jump Aphi_choice
+    else:
+        jump Aphi_choice
+
+label Aphi_choice:
     menu:
         "Should I tell Stormee I'm Interested in Greek life?"
         "Um, obvi.":
@@ -154,6 +159,9 @@ label aphi_intro:
             s "I'll be there."
             s "And I'll be the best new member you've ever had."
             stormee "haha, we call them pledges, silly."
+            stormee "Here's your entry card!"
+            "Stormee hands me an ecru card embossed with Greek letters."
+            $ inventory['Alpha Phi Entry Card'] = 1
             stormee "Come ready to be hazed!"
             jump club_outro
 
@@ -167,7 +175,7 @@ label aphi_intro:
 label club_outro:
     show bg quad_busy
     "The welcoming events are wrapping up, I should probably head back to my dorm."
-    #show bg stairwell
+    show bg stairwell
     "I can't believe that they assigned me a six-floor walk-up."
     s "*pant*"
     tiger "Stella? Stella Belfort?"
@@ -194,7 +202,7 @@ label club_outro:
     "Built as a bathroom but converted into a double."
     "On the top-bunk/washbasin sits a kind-looking girl."
     s "Hey I'm Stella, I think we're roommates"
-    connie "Hey Stella! I'm ConTessa, but I go by Connie."
+    connie "Hey Stella, I'm ConTessa, but I go by Connie."
     connie ""
 
 
