@@ -17,7 +17,7 @@ label alphaphi:
     "The block 'Y'."
     "Yale University, here I come."
 
-    #show bg quad_busy
+    show bg quad_busy
     "We pull up in front of a lively campus, hundreds of excited freshmen milling about the quad."
     "*SKRRRRR*"
     "I jump out of the car, dump my rucksack in my new dorm room and rush out to make new friends."
@@ -79,7 +79,7 @@ label alphaphi:
             jump club_intros
 
 label club_intros:
-    #show bg quad_busy
+    show bg quad_busy
     "I spot Maddie mingling around a sorority table."
     "I'll investigate once she leaves."
     "I walk among the throngs of club tables, searching for something that piques my interest."
@@ -124,7 +124,7 @@ label club_intros:
             jump aphi_intro
 
 label aphi_intro:
-    #show bg quad_busy
+    show bg quad_busy
     "I can see that Maddie's left the sorority recruitment table."
     "Slowly, I jaunt over to check out what she was up to."
     #show bg quad_closeup
@@ -165,7 +165,7 @@ label aphi_intro:
             jump club_outro
 
 label club_outro:
-    #show bg quad_busy
+    show bg quad_busy
     "The welcoming events are wrapping up, I should probably head back to my dorm."
     #show bg stairwell
     "I can't believe that they assigned me a six-floor walk-up."
@@ -189,7 +189,7 @@ label club_outro:
     s "..."
     s "So I'm gonna go to my dorm now."
     "I leave Tiger behind in the stairwell and walk into my dorm room."
-    #show bg dorm_room
+    show bg dorm_room
     "It's a converted double."
     "Built as a bathroom but converted into a double."
     "On the top-bunk/washbasin sits a kind-looking girl."
