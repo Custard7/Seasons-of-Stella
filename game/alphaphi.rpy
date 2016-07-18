@@ -6,6 +6,7 @@ label alphaphi:
 
 
     centered "Fall"
+    #show bg airport
     "Eyes wide, I step off the 747 and into the sweet, sticky, September, New-Haven air."
     "To my right, an old couple argues with a gate agent."
     "To my left, a moose gallivants across the tarmac."
@@ -16,6 +17,7 @@ label alphaphi:
     "The block 'Y'."
     "Yale University, here I come."
 
+    #show bg quad_busy
     "We pull up in front of a lively campus, hundreds of excited freshmen milling about the quad."
     "*SKRRRRR*"
     "I jump out of the car, dump my rucksack in my new dorm room and rush out to make new friends."
@@ -32,6 +34,7 @@ label alphaphi:
 
     menu:
         "Talk to the frat bros.":
+            #show bg quad_closeup
             s "Aren't you being a little sexist?"
             durks "I think you mean {i}sex-iest{/i}!"
             cdog "ha {i}HA{/i}!"
@@ -57,6 +60,7 @@ label alphaphi:
             jump club_intros
         
         "Flip off the frat bros.":
+            #show bg quad_close_up
             s "Fuck you, you sexist pigs!"
             durks "Ouch."
             durks "Brother, my feelings are a little hurt."
@@ -75,6 +79,7 @@ label alphaphi:
             jump club_intros
 
 label club_intros:
+    #show bg quad_busy
     "I spot Maddie mingling around a sorority table."
     "I'll investigate once she leaves."
     "I walk among the throngs of club tables, searching for something that piques my interest."
@@ -85,6 +90,7 @@ label club_intros:
     "Those all sound lame."
     "A sign catches the corner of my eye."
     "*Astronomy Club*"
+    #show bg quad_closeup
     s "I love astrology!"
     lassi "Actually, this is astronomy club. The study of celestial bodies."
     lassi "Astrology isn't real."
@@ -118,23 +124,79 @@ label club_intros:
             jump aphi_intro
 
 label aphi_intro:
+    #show bg quad_busy
     "I can see that Maddie's left the sorority recruitment table."
     "Slowly, I jaunt over to check out what she was up to."
-    stormy "Hi There!"
+    #show bg quad_closeup
+    stormee "Hi There!"
     "A bright, jovial voice interrupts my internal monologue."
-    stormy "I'm Stormee, president of Alpha Phi sorority here at Yale! Who are you?"
+    stormee "I'm Stormee, president of Alpha Phi sorority here at Yale! Who are you?"
     s "I'm Stella, I'm a freshman from Montana."
-    stormy "No way! I was just talking to a girl from Montana, do you two know each other?"
+    stormee "No way! I was just talking to a girl from Montana, do you two know each other?"
     s "..."
     s "...yes."
-    stormy "hahaha cool!"
+    stormee "hahaha cool!"
     "An elderly Galapagos tortoise plods by her feet."
     s "Who's that?"
-    stormy "Oh, that's Keith! He's our house pet!"
+    stormee "Oh, that's Keith! He's our house pet!"
     k "*hu-ugh*"
     stormy "Do you want to know more about joining a sorority?"
     if anti_nerd == True and anti_frat == True:
         "I should probably join at least one club here..."
+    menu:
+        "Should I tell Stormee I'm Interested in Greek life?"
+        "Um, obvi.":
+            s "I'm totes interested."
+            stormee "haha sweet!"
+            stormee "Come to the Alpha Phi house this Thursday!"
+            stormee "All the actives will judge you to see if you're cool enough to deserve a bid."
+            "All this jargon had my head spinning, but I was excited by the chance to climb the social ladder."
+            s "I'll be there."
+            s "And I'll be the best new member you've ever had."
+            stormee "haha, we call them pledges, silly."
+            stormee "Come ready to be hazed!"
+            jump club_outro
+
+        "Not really.":
+            s "No, not really."
+            stormee "haha no worries!"
+            stormee "We can all be in a bit of a whirlwind sometimes."
+            stormee "Talk to us later if something changes."
+            jump club_outro
+
+label club_outro:
+    #show bg quad_busy
+    "The welcoming events are wrapping up, I should probably head back to my dorm."
+    #show bg stairwell
+    "I can't believe that they assigned me a six-floor walk-up."
+    s "*pant*"
+    tiger "Stella? Stella Belfort?"
+    s "Tiger?! Wow, there sure are a lot of folks from Montana at this school."
+    tiger "I'm in the Sigma Chi fraternity here! My sister Nimo is gonna join Alpha Phi. We're pretty big deals."
+    tiger "You look pretty spent from these stair-climb-burpee-box-jump-arnold-tuck-curl-presses."
+    tiger "Want a bite of my x1-rejuvination-power-protein-bar?"
+    tiger "It's sponsored by Michael Jordan."
+    s "...sure Tiger, thanks."
+    tiger "See you around Stella! And remember, we're always looking for greek-life members to come join us down on Wall Street!"
+    if anti_frat == True:
+        s "Actually, frats are archaic institutionalized racism that promote socio-economic stratification while refusing to acknowledge the crisis of confidence present in lower-class America thanks to de jure tracking in our public school system as was upheld in {i}Cantwell v. North Dakota Board of Regents.{/i}"
+        tiger "What Do You Mean?"
+        tiger "ohh-oh."
+    else:
+        s "I'll think about it!"
+        tiger "I can take you places you've never been before."
+
+    s "..."
+    s "So I'm gonna go to my dorm now."
+    "I leave Tiger behind in the stairwell and walk into my dorm room."
+    #show bg dorm_room
+    "It's a converted double."
+    "Built as a bathroom but converted into a double."
+    "On the top-bunk/washbasin sits a kind-looking girl."
+    s "Hey I'm Stella, I think we're roommates"
+    connie "Hey Stella! I'm ConTessa, but I go by Connie."
+    connie ""
+
 
 
 
