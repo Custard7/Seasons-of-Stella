@@ -1,20 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 94, in script
-    return
-Exception: Could not find return label (u'C:\\Users\\Ezekiel\\Documents\\SoS\\renpy-6.99.10-sdk\\seasons-of-stella/game/alphaphi.rpy', 1468869387, 117).
+  File "game/alphaphi.rpy", line 239, in script
+    if 'Alpha Phi Entry Card' is in inventory:
+SyntaxError: invalid syntax (game/alphaphi.rpy, line 239)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 94, in script
-    return
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1368, in execute
-    next_node(renpy.game.context().lookup_return(pop=True))
-  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\execution.py", line 523, in lookup_return
-    raise Exception("Could not find return label {!r}.".format(self.return_stack[-1]))
-Exception: Could not find return label (u'C:\\Users\\Ezekiel\\Documents\\SoS\\renpy-6.99.10-sdk\\seasons-of-stella/game/alphaphi.rpy', 1468869387, 117).
+  File "game/alphaphi.rpy", line 239, in script
+    if 'Alpha Phi Entry Card' is in inventory:
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1605, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 512, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/alphaphi.rpy, line 239)
 
 Windows-8-6.2.9200
 Ren'Py 6.99.10.1227

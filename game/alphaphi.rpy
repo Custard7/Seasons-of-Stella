@@ -203,9 +203,47 @@ label club_outro:
     "On the top-bunk/washbasin sits a kind-looking girl."
     s "Hey I'm Stella, I think we're roommates"
     connie "Hey Stella, I'm ConTessa, but I go by Connie."
-    connie ""
+    connie "I'm in charge of the campus-wide 'Save The Juncos' initiative."
+    if anti_nerd == True:
+        s "That sounds really stupid."
+        s "Juncos are like fat chickadees."
+        s "They're the last things that need saving."
+        s "You're just wasting your time."
+        connie "Oh."
+        connie "I didn't know you felt that way."
+        connie "I'm gonna shower and go to bed."
+        connie "Good night Stella."
+        "Connie left the room, leaving me to reflect on my savage take-down of her bird club."
+        "Someone needed to tell her the harsh truth of this world."
+        "I didn't come here to make friends."
+        "I came here to..."
+        "I mean... I did come here to make friends."
+        "But not friends like {i}her{/i}."
+        jump ch1_conclusion
+    else:
+        s "That sounds interesting."
+        s "I'd love to get to know you a bit better."
+        s "Maybe I'll come to one of your club meetings sometime."
+        connie "Sounds great, thanks Stella!"
+        connie "I'm going to head to bed, but I'm excited to live with you!"
+        jump ch1_conclusion
 
+label ch1_conclusion:
+    show bg black
+    "After a shower, I slip into bed and turn off the lights."
+    "What a day."
+    "Tomorrow, I start classes, but I'm most excited to see where this wild train of characters takes me."
+    s "*zzzzZZZZZ*"
 
+    #Choices for next chapter
+    if 'Alpha Phi Entry Card' in inventory:
+        jump alphaphi_pledge
+    
+    elif anti_frat == True and anti_nerd == True:
+        jump nofriends_pt1
+
+    else:
+        jump nerd_pt1
 
 
     return
