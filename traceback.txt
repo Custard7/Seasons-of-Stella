@@ -1,27 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/start.rpy", line 27, in script
-    with Dissolve
-Exception: Expected transition to be a displayable, not a <curry <class 'renpy.display.transition.Dissolve'> () {'new_widget': <Fixed at 437eff0>, 'old_widget': <Fixed at 43be590>}>
+  File "game/alphaphi.rpy", line 239, in script
+    if 'Alpha Phi Entry Card' is in inventory:
+SyntaxError: invalid syntax (game/alphaphi.rpy, line 239)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/start.rpy", line 27, in script
-    with Dissolve
-  File "C:\Users\Duncan\Desktop\renpy-6.99.10-sdk\renpy\ast.py", line 1266, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "C:\Users\Duncan\Desktop\renpy-6.99.10-sdk\renpy\exports.py", line 1357, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "C:\Users\Duncan\Desktop\renpy-6.99.10-sdk\renpy\display\core.py", line 1987, in do_with
-    clear=clear)
-  File "C:\Users\Duncan\Desktop\renpy-6.99.10-sdk\renpy\display\core.py", line 2425, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\Users\Duncan\Desktop\renpy-6.99.10-sdk\renpy\display\core.py", line 2649, in interact_core
-    raise Exception("Expected transition to be a displayable, not a %r" % trans)
-Exception: Expected transition to be a displayable, not a <curry <class 'renpy.display.transition.Dissolve'> () {'new_widget': <Fixed at 437eff0>, 'old_widget': <Fixed at 43be590>}>
+  File "game/alphaphi.rpy", line 239, in script
+    if 'Alpha Phi Entry Card' is in inventory:
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\ast.py", line 1648, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 1605, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\Ezekiel\Documents\SoS\renpy-6.99.10-sdk\renpy\python.py", line 512, in py_compile
+    raise e
+SyntaxError: invalid syntax (game/alphaphi.rpy, line 239)
 
-Windows-7-6.1.7601-SP1
+Windows-8-6.2.9200
 Ren'Py 6.99.10.1227
 Seasons of Stella 0.0

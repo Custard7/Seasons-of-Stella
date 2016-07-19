@@ -6,7 +6,7 @@ label belfort:
 
     #story
 
-    centered "==Summer=="
+    centered "Summer"
     "24 personal essays, 14 on-line leadership seminars, several phone calls, 18 networking trips, 3.4 friends lost, and a butt-load of coffee later . . ."
     "This is it."
     "The silver crested letters stand nobly, bathing in an aura of prestige"
