@@ -23,5 +23,5 @@ define stormee = Character('Stormee', color = "#cc99ff")
 define mat = Character('MatTt', color = "#bbff33")
 define chi = Character('Chi', color = "#ffb84d")
 define connie = Character('Connie', color = "#993300")
-define bryn = Character('Bryn', color = "#1ac6ff")
+define lassi = Character('Lassi', color = "#ffcc66")
 return 

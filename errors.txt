@@ -1,9 +1,0 @@
-﻿I'm sorry, but errors were detected in your script. Please correct the
-errors listed below, and try again.
-
-
-File "game/belfort.rpy", line 37: Line is followed by a block, despite not being a menu choice. Did you forget a colon at the end of the line?
-    "Ready? Huh, on my birthing table I cut my own umbilical cord with a Visa™ Credit Card and exercised my first Stock Option Agreement"
-                                                                                                                                         ^
-
-Ren'Py Version: Ren'Py 6.99.10.1227
