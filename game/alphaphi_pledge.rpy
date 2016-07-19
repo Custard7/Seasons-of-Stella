@@ -18,6 +18,7 @@ label alphaphi_pledge:
     #show bg aphi_enter
     "All around me, girls mill around, nervously chatting away."
     "I see Stormee walk out above the ornate staircase to address the crowd."
+    stormee "Welcome girls!"
 
 
 
