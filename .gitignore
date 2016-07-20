@@ -13,3 +13,5 @@ game/saves/*
 ehthumbs.db
 Thumbs.db
 log.txt
+errors.txt
+*.txt
