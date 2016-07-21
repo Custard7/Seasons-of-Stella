@@ -24,4 +24,7 @@ define mat = Character('MatTt', color = "#bbff33")
 define chi = Character('Chi', color = "#ffb84d")
 define connie = Character('Connie', color = "#993300")
 define lassi = Character('Lassi', color = "#ffcc66")
+define girl = Character('Girl', color = "#FFFFFF")
+define tiger_manager = Character('Tiger Manley, Innovative Fiduciary', color="#0066ff")
+
 return 
