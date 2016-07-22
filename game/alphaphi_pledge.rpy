@@ -187,10 +187,10 @@ label stage2:
     stormee "Anybody want to go first?"
     s "I was feeling really confident after the guac swim." 
     s "Yeah, I'll go!"
-    menu:
-        "What should I perform a poem about?"
-
-        ""
+    # menu:
+    #    "What should I perform a poem about?"
+#
+ #       ""
 
 
 
