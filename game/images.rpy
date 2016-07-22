@@ -1,5 +1,4 @@
-# Declare images below this line, using the image statement.
-# eg. image eileen happy = "eileen_happy.png"
+#Start BG
 image bg black = "#000000"
 image bg white = "#FFFFFF"
 image bg gym far = "gym_far.jpg"
@@ -15,6 +14,7 @@ image bg greenroom = "greenroom.jpg"
 image bg school front = "school_front.jpg"
 image bg speech giving = "speech_giving.jpg"
 image bg speech finish = "speech_finish.jpg"
+#Alpha Phi BG
 image bg quad_busy = "quad_busy.jpg"
 image bg quad_closeup = "quad_closeup.jpg"
 image bg dorm_room = "dorm_room.jpg"
@@ -24,3 +24,13 @@ image bg srat = "srat.jpg"
 image bg aphi_enter = "aphi_enter.jpg"
 image bg basement = "basement.jpg"
 image bg pool = "pool.jpg"
+#Pucas BG
+image bg cabin_exterior = "cabin_exterior.jpg"
+image bg cabin_front = "cabin_front.jpg"
+image bg cabin_upstairs = "cabin_upstairs.jpg"
+image bg fireplace = "fireplace.jpg"
+image bg forestheart = "forestheart.jpg"
+image bg snowy_road = "snowy_road.jpg"
+image bg nightwoods = "woods.jpg"
+image bg deepwoods = "deepwoods.jpg"
+image bg deeperwoods = "deeperwoods.jpg"

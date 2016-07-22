@@ -582,7 +582,7 @@ label speech_continue:
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
         show bg speech finish
         "The gym erupts in applause, and I am content."
-        jump pucas
+        jump pucasCh1
 
 
     elif max(alpha_phi_points, pucas_points, belfort_points, nicaragua_points) == belfort_points:
