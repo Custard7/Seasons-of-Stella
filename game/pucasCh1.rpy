@@ -57,7 +57,7 @@ label pucasCh1:
     menu: 
         "Stuff the falafel in your mouth.":
             $ sexy_factor -= 20
-            $ ate_falaefl = True .
+            $ ate_falafel = True 
             "I reach into the box, pluck up the piece of falafel, and plop right in my mouth."
             "It's pretty big, but I swallow it with only minor difficulty"
             "Fukklesprout glares at me warily."
@@ -121,43 +121,44 @@ label pucasCh1:
             "He beckons me to come around."
             "In the back of his trunk are several large boxes, a sheathed broadsword, and a 50 gallon drum, labeled 'Drumchata'."
             jacques "Thanks so much, Stell. You're being a huge help! Just grab something and, and I can get the rest."
-                menu:
-                    "Grab the Drumchata":
-                        "I reach forward into the trunk, and wrap my arms around the Drumchata."
-                        jacques "You sure you got that?"
-                        s "Yeah, I'm fine"
-                        "I heft up the giant drum."
-                        "I'm not fine."
-                        "I waddle a few feet, barely keeping my balance on the compacted snow."
-                        "This thing is way too heavy!"
-                        "My grip starts to slip, so I lean backwards to lift the drum up higher."
-                        s "Ahhh!"
-                        "The snow gives way under my feet, and I'm falling."
-                        "The giant drum looms above, plummeting towards me in slow motion."
-                        "This is it. I've lived a good life, but I never got to fix things with-"
-                        s "Pucas."
-                        "Ka-Ching!"
-                        "The drum flies across the snowy road, landing with a *THUD* at the foot of the door"
-                        "Standing above me, gleaming broadsword in hand, is none other than Pucas. P Potato."
-                        "He's grown older since the last time I saw him. You can sense the wisdom behind his strong, masculine features."
-                        "He reaches down a hand to me."
-                        "I take it."
-                        "With a mighty heave, he rights me."
-                        p "Are you all right?"
-                        "I'm breathless, so I nod"
-                        p "Glad to hear."
-                        jacques "Pucas, that was awesome. Mind carrying the broadsword in?"
-                        "Pucas nods, sheaths the blade."
-                    "Grab the broadsword":
-                        "I reach for the broadsword."
-                        "It's kind of heavy, but I can handle it."
-                        "I stride toward the front door of the cabin, being careful not to step on any-"
-                        "Ice."
-                        s "Aahhhhhhh!"
-                    "Grab some boxes":
-                        $ sexy_factor -= 20
+            menu:
+                "Grab the Drumchata":
+                    "I reach forward into the trunk, and wrap my arms around the Drumchata."
+                    jacques "You sure you got that?"
+                    s "Yeah, I'm fine"
+                    "I heft up the giant drum."
+                    "I'm not fine."
+                    "I waddle a few feet, barely keeping my balance on the compacted snow."
+                    "This thing is way too heavy!"
+                    "My grip starts to slip, so I lean backwards to lift the drum up higher."
+                    s "Ahhh!"
+                    "The snow gives way under my feet, and I'm falling."
+                    "The giant drum looms above, plummeting towards me in slow motion."
+                    "This is it. I've lived a good life, but I never got to fix things with-"
+                    s "Pucas."
+                    "Ka-Ching!"
+                    "The drum flies across the snowy road, landing with a *THUD* at the foot of the door"
+                    "Standing above me, gleaming broadsword in hand, is none other than Pucas. P Potato."
+                    "He's grown older since the last time I saw him. You can sense the wisdom behind his strong, masculine features."
+                    "He reaches down a hand to me."
+                    "I take it."
+                    "With a mighty heave, he rights me."
+                    p "Are you all right?"
+                    "I'm breathless, so I nod"
+                    p "Glad to hear."
+                    jacques "Pucas, that was awesome. Mind carrying the broadsword in?"
+                    "Pucas nods, sheaths the blade."
+                "Grab the broadsword":
+                    "I reach for the broadsword."
+                    "It's kind of heavy, but I can handle it."
+                    "I stride toward the front door of the cabin, being careful not to step on any-"
+                    "Ice."
+                    s "Aahhhhhhh!"
+                "Grab some boxes":
+                    $ sexy_factor -= 20
 
         "Kick him in the shins":
+            $ placeholder = 0
 
 
 
