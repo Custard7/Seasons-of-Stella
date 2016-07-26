@@ -2,8 +2,10 @@ label belfort:
 
     #variables
     $ dominance = 0;
-    $ favorability_taiga = 100;
+    $ favorability_taiga = 100
     $ dominated_tiger = False
+    $ fired = False
+    $ game_over = False
 
     #story
 
@@ -70,8 +72,11 @@ label fired:
     "I feel milquetoast."
     "I managed wealth . . ."
     "But I couldn't manage myself."
-    "==Game Over=="
+    $ game_over = True
+    jump gameover
 
+label gameover:
+    "== Game Over =="
     return
 
 label manager_dominate_sequence:
@@ -134,27 +139,30 @@ label manager_dominate_sequence:
             tiger_manager "That's it, you're fired!"
             menu:
                 "Fire me. I dare you.":
-                    jump fired
+                    $ fired = True 
+                    $ aggression = -1
                 "Fuck you, your family, your first born child, Storgan Manley, Derivatives, and your fluffy hair until you let me have the pleasure of meeting you!":
                     $ aggression = -1
                     $ dominance += 1000
-                    tiger_mammal "Damn. You can have it."
+                    tiger_manager "Damn. You can have it."
                     "Power moves only. It's the only way to make it in this world"
                     "Dog eat dog. Tiger eat tiger"
                     s "I am the tiger now."
-                    tiger_mammal "I like you"
+                    tiger_manager "I like you"
                     $ favorability_taiga += 100
-                    tiger_mammal "You're gonna go far here, kid"
-                    tiger_mammal "I always like to test the new recruits. See if they are made of somethin'"
-                    tiger_mammal "Sometimes you get the weaklings. The plastic knockoffs of real meat n' bone tigers"
-                    tiger_mammal "Welcome to the jungle"
+                    tiger_manager "You're gonna go far here, kid"
+                    tiger_manager "I always like to test the new recruits. See if they are made of somethin'"
+                    tiger_manager "Sometimes you get the weaklings. The plastic knockoffs of real meat n' bone tigers"
+                    tiger_manager "Welcome to the jungle"
                     $ dominated_tiger = True
                 "Okay, the pleasure is yours":
-                    tiger_mammal "Oh, it's too late for that!"
-                    jump fired
+                    tiger_manager "Oh, it's too late for that!"
+                    $ fired = True 
+                    $ aggression = -1
                 "Okay, dammit, the pleasure is yours":
-                    tiger_mammal "Oh, it's too late for that!"
-                    jump fired
+                    tiger_manager "Oh, it's too late for that!"
+                    $ fired = True 
+                    $ aggression = -1
     return
 
 
@@ -191,6 +199,9 @@ label manager_meeting:
     if dominated_tiger:
         "Mr. Manley gestures me into his office, smiling as he waits for me to enter first"
     else:
+        if fired:
+            jump fired
+
         "Without gesture Mr. Manley walks into his office, leaving his door open"
 
 
