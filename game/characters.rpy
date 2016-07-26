@@ -26,5 +26,6 @@ define connie = Character('Connie', color = "#993300")
 define lassi = Character('Lassi', color = "#ffcc66")
 define girl = Character('Girl', color = "#FFFFFF")
 define tiger_manager = Character('Tiger Manley, Innovative Fiduciary', color="#0066ff")
+define beast = Character('???', color="ff0000")
 
 return 

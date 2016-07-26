@@ -45,8 +45,11 @@ label start:
     p "Congrats to me? No way, it's all on you! You're the one giving a big speech."
     "He pats me on the back. Is he patronizing me?"
     s "No, not at all. It's not that big of a deal."
-    "I remember Maddie was on her way over."
-    "Behind me, I see her, pacing, waiting for Pucas to leave."
+    "Crap!"
+    "Maddie's on her way!"
+    "I glance backward."
+    "Let's hope she's not there . . . "
+    "Behind me, she's pacing, waiting for Pucas to leave."
     "I'm safe for now."
     p "Maddie is giving a speech too, I heard. You two have always been so impressive."
     s "Oh, you're embarassing me!"
@@ -135,8 +138,8 @@ label Pucas_goodbye:
 label ganja:
     show bg gym far
     "I jump back to attention."
-    "Last thing I remember, Maddie Velvet was heading my way."
-    "I turn around, quickly, and see-"
+    "Maddie velvet is on her way!"
+    "I turn around, and see-"
     show bg gym close
     star "Stella! Want some green ganja?"    
     "It's Starbuck. Pretentious and giggly, as usual."
@@ -388,7 +391,7 @@ label stanley:
     nimo "Tiger Mammal! Nani o shimasuka?!"
     if tiger_lick == True:
         s "I withdraw my tongue"
-    tiger "Nimo! Ugh, I had already finished my single set of dumbell barbench curls. I'm spent."
+    tiger "Nimo! Ugh, I've already finished my single set of dumbell barbench curls. I'm spent."
     nimo "Whatever Tiger, ugh."
     nimo "Who are you?"
     s "I am the Big Stella."
@@ -397,7 +400,7 @@ label stanley:
 
     nimo "Aren't you giving that big speech today?"
     s "OH MY! Yes, yes I am."
-    "I had almost forgotten! The biggest moment of my life!"
+    "I almost forgot! The biggest moment of my life!"
     s "What time is it?"
     nimo "Time to get you going! The Big Stella can't make the whole town wait!"
     nimo "Come on, I'll give you a ride."
@@ -408,13 +411,17 @@ label stanley:
 
 label alpha_phi:
     show bg school front
-    "As Nimo drops me off in front of the gymnasium, I hastily check my phone."
+    "Nimo drops me off in front of the school gymnasium."
+    "I hastily check my phone:"
+    "11:53 A.M."
+    "Just in time!"
     if Pucas_flirt == True:
+        "What's this?"
         '*TWO UNREAD MESSAGES*'
         '*FROM: PUCAS POTATO*'
         '*Thinking about you Stella ;)*'
         '*PUCAS SENT A PHOTO*'
-        "Huh, I'd have to check that later."
+        "Huh, I'll have to check that later."
     else:
         '*ONE UNREAD MESSAGE*'
         '*FROM: DAD*'
@@ -423,8 +430,8 @@ label alpha_phi:
     show bg greenroom
     m 'Hey Stella.'
     s '*UAGH*'
-    "Maddie had snuck up on me!"
-    "I'm trapped', like a lone salmon who'd made the treacherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
+    "Maddie snuck up on me!"
+    "I'm trapped, like a lone salmon who's made the treacherous journey back to her spawning grounds only to discover a recently constructed dam, built to divert stream flow to a dilapidated alpaca ranch."
     s "Hey Maddie... are you... ready for your speech?"
     m "*scoff*"
     m "I could ask you the same question."
@@ -444,8 +451,8 @@ label alpha_phi:
         "I must have said that out-loud."
         s "n-n-no, I..."
         m "*HA*"
-        m "Stella and Pucas siting in a tree."
-        m "B - E - I - N - G    G - D - Is"
+        m "Stella and Pucas sitting in a tree."
+        m "B - E - I - N - G    G - D - I's."
         menu:
             "Ask Maddie what a GDI is.":
                 s "GDI?"
