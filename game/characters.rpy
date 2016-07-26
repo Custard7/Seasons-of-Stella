@@ -29,7 +29,7 @@ define girl = Character('Girl', color = "#FFFFFF") # Gurl
 define tiger_manager = Character('Tiger Manley, Innovative Fidouchery', color="#0066ff") # Taiga as a manager
 define tbone = Character('Crangin\' T-Bone', color='#663300') #Tanner Block
 define gemma = Character('Giant Emma', color='#e6e6e6') # Emma Rott
-define hirning Character('Caustic Hirning', color='#009933') # Emily Hirning
+define hirning = Character('Caustic Hirning', color='#009933') # Emily Hirning
 define kyrie = Character('2nd Chika', color='#cc0099') # Kyrie 
 define cox = Character('OG Dirty Cox', color='#ffcc99') # Curtis Cox
 define jblock = Character('Tiny Man Block', color='#ff9999') # Joel Block

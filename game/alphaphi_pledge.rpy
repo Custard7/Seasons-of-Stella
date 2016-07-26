@@ -77,7 +77,7 @@ label alphaphi_pledge:
             centered "R.I.P. Stella Belfort"
             centered "She died the way she lived:"
             centered "Like a Calamari."
-            jump game_over
+            return
         
         "Mark Zuckerberg":
             s "That was definitely Mark Zuckerberg."
@@ -94,7 +94,7 @@ label alphaphi_pledge:
             centered "R.I.P. Stella Belfort"
             centered "She died the way she lived:"
             centered "Like a Calamari."
-            jump game_over
+            return
 
 label stage1_continue:
     "The girls continue answering questions."
@@ -121,7 +121,7 @@ label stage1_continue:
             centered "R.I.P. Stella Belfort"
             centered "She died the way she lived:"
             centered "Like a Calamari."
-            jump game_over
+            return
 
         "Savannah & Courtney":
             stormee "Very good, Stella Belfort."
@@ -142,7 +142,7 @@ label stage1_continue:
             centered "R.I.P. Stella Belfort"
             centered "She died the way she lived:"
             centered "Like a Calamari."
-            jump game_over
+            return
 
 label stage2:
     "Out of the 50 girls that had come here, only 30 remained."
@@ -187,10 +187,90 @@ label stage2:
     stormee "Anybody want to go first?"
     s "I was feeling really confident after the guac swim." 
     s "Yeah, I'll go!"
-    # menu:
-    #    "What should I perform a poem about?"
-#
- #       ""
+    menu:
+        "What should I perform a poem about?"
+
+        "The Patriarchy":
+            "I hop on the stage, ready to enlighten the world about the dangers of men."
+            s "How can you expect a girl to survive?"
+            s "When all day,"
+            s "{i}Every{/i} day,"
+            s "We're being stomped on."
+            s "By the massive cowboy boot of the patriarchy."
+            s "Crash!"
+            s "Do you hear that?"
+            s "Hear the crashing?"
+            s "More and more women each day."
+            s "Crashed and crushed."
+            s "CCCCCCRRrrrrrrruuuuuusssshhhh."
+            s "Thank You."
+            jump got_bid
+
+        "Mark Zuckerberg":
+            "I leap on the stage, ready to talk about the man who changed the world."
+            s "MARK"
+            s "ZUCK-ER-BERG"
+            s "Marky marks his mark on the world."
+            s "A book of faces."
+            s "When will we stop reading facebook,"
+            s "And start booking faces."
+            s "Thank You."
+            jump got_bid
+
+        "Selling Drugs":
+            "I mount the stage, ready to drop some truth bombs about slingin' in the streets."
+            s "Chedda chedda"
+            s "I call out, but no response."
+            s "This is how I survive."
+            s "On the corner."
+            s "My rapport, not with the teachers, nor the pastors, nor the coaches."
+            s "I know one thing."
+            s "I don't pedal bikes."
+            s "I peddle ganja."
+            s "Wavy green."
+            s "{i}Green.{/i}"
+            s "Thank you."
+            jump got_bid
+
+        "Homesickness":
+            "I get on the stage, ready to spill my heart out to these new friends."
+            s "HoMe."
+            s "Capital H-M HOME!"
+            s "The place my heart rests, my body rests, my {i}soul{/i} rests."
+            s "But {i}how{/i}, {i}how{/i} do we know what home means to the one next to us?"
+            s "I look right."
+            s "I look left."
+            s "I see girls, anticipating, but they {i}know{/i}."
+            s "They know."
+            s "They're not home."
+            s "None of us are."
+            s "Maybe, until we return to the very womb that bore us, none of us can return home."
+            s "Thank you."
+            stormee "Wow."
+            stormee "That was the geediest poem I've heard in my life."
+            stormee "haha!"
+            stormee "I'm gonna go ahead and DQ you right here."
+            stormee "You'll {i}never{/i} get a bid to Alpha Phi."
+            "My head spins. I was counting on this. I don't know what to do."
+            "Without thinking, I grab the lead pipe next to me and rush at Stormee in a fit of rage."
+            s "*RRRRAAAAAAGGGHH*"
+            "She deftly sidesteps my charge, grabs a candlestick and whacks me over the head."
+            "*THWACK*"
+            "My vision fades."
+            show bg black
+            "I couldn't handle the rejection."
+            centered "You have died."
+            centered "R.I.P. Stella Belfort"
+            centered "Colonel Mustard, in the basement, with the candlestick."
+            return
+
+label got_bid:
+    stormee "Wow Stella, that poem was pretty frat."
+    stormee "You can go sit down now while the other girls perform."
+    "I take a seat and listen to the other slam-poems."
+    "Maddie gives hers about that time she won the school spelling bee."
+    "Soon, the poems have all been recited and the actives retreat to the chapter room to deliberate."
+    "No doubt they're pouring over our Facebook pages and judging our photos at this very moment."
 
 
 
