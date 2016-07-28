@@ -23,6 +23,7 @@ image bg srat = "srat.jpg"
 image bg aphi_enter = "aphi_enter.jpg"
 image bg basement = "basement.jpg"
 image bg pool = "pool.jpg"
+image bg library = "library.jpg"
 #Pucas BG
 image bg cabin_exterior = "cabin_exterior.jpg"
 image bg cabin_front = "cabin_front.jpg"

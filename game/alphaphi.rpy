@@ -18,6 +18,7 @@ label alphaphi:
     "Yale University, here I come."
 
     show bg quad_busy
+    with fade
     "We pull up in front of a lively campus, hundreds of excited freshmen milling about the quad."
     "*SKRRRRR*"
     "I jump out of the car, dump my rucksack in my new dorm room and rush out to make new friends."
@@ -176,6 +177,7 @@ label club_outro:
     show bg quad_busy
     "The welcoming events are wrapping up, I should probably head back to my dorm."
     show bg stairwell
+    with fade
     "I can't believe that they assigned me a six-floor walk-up."
     s "*pant*"
     tiger "Stella? Stella Belfort?"
@@ -243,7 +245,7 @@ label ch1_conclusion:
         jump nofriends_pt1
 
     else:
-        jump nerd_pt1
+        jump nerd
 
 
     return
