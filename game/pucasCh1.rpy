@@ -2,7 +2,7 @@ label pucasCh1:
     $ sexy_factor = 100
     $ ate_falafel = False
     $ grabbed_drumchata = False
-
+    play "snowmen.mp3" loop
     show bg black
     centered "Winter"
     centered "1.5 years later"
