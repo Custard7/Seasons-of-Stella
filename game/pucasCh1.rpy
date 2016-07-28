@@ -2,13 +2,14 @@ label pucasCh1:
     $ sexy_factor = 100
     $ ate_falafel = False
     $ grabbed_drumchata = False
-    play "snowmen.mp3" loop
+    play music "snowmen.mp3" loop
     show bg black
+    "It's cold."
     centered "Winter"
-    centered "1.5 years later"
+    centered "Chapter 1"
+    centered "December 31st, 2015"
     show bg snowy_road
     with dissolve
-    "It's cold."
     "Even in the car, the cold seeps through the thin window panes."
     "Our breath is frozen onto the inside of the glass, a web of crystal."
     "I let out a little shiver."
@@ -284,7 +285,13 @@ label pucasCh1:
         "Good thing Pucas was there to save the day."
     "Jàçqüés helps me carry everything, and eventually, we're ready to go inside."
     s "Finally! I'm freezing."
-
-
-
+    show bg cabin_front
+    "The cabin door sits in front of us, waiting to be opened up."
+    "Waiting for us to welcome in the New Year."
+    "Waiting for me to..."
+    "Talk with Pucas."
+    show bg black
+    with fade
+    $ renpy.pause(1)
+    jump pucasCh2
     return
