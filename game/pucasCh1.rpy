@@ -96,6 +96,7 @@ label pucasCh1:
              "He pulls out his Pikachu-cased smartphone, with a little anime girl keychain attached."
              "Fukklesprout types furiously."
 
+
     jacques "Well, you all can stop bitching, because we're finally here! New Year's 2K16 is a GO!"
 
     show bg cabin_exterior
@@ -124,39 +125,6 @@ label pucasCh1:
             jacques "Thanks so much, Stell. You're being a huge help! Just grab something and I can get the rest."
             menu:
                 "Grab the Drumchata":
-                    "I reach forward into the trunk, and wrap my arms around the Drumchata."
-                    jacques "You sure you got that?"
-                    s "Yeah, I'm fine"
-                    "I heft up the giant drum."
-                    "I'm not fine."
-                    "I waddle a few feet, barely keeping my balance on the compacted snow."
-                    "This thing is way too heavy!"
-                    "My grip starts to slip, so I lean backwards to lift the drum up higher."
-                    s "Ahhh!"
-                    "The snow gives way under my feet, and I'm falling."
-                    "The giant drum looms above, plummeting towards me in slow motion."
-                    "This is it. I've lived a good life, but I never got to fix things with-"
-                    s "Pucas."
-                    "Ka-Ching!"
-                    "The drum flies across the snowy road, landing with a *THUD* at the foot of the door"
-                    "Standing above me, gleaming broadsword in hand, is none other than Pucas. P Potato."
-                    "He's grown older since the last time I saw him. You can sense the wisdom behind his strong, masculine features."
-                    "He reaches down a hand to me."
-                    "I take it."
-                    "With a mighty heave, he rights me."
-                    p "Are you all right?"
-                    "I'm breathless, so I nod"
-                    p "Glad to hear."
-                    jacques "Pucas, that was awesome. Mind carrying the broadsword in?"
-                    "Pucas nods, sheaths the blade."
-                "Grab the broadsword":
-                    "I reach for the broadsword."
-                    "It's kind of heavy, but I can handle it."
-                    "I stride toward the front door of the cabin, being careful not to step on any-"
-                    "Ice."
-                    s "Aahhhhhhh!"
-                "Grab some boxes":
-                    $ sexy_factor -= 20
                     $ grabbed_drumchata = True
                     "I reach forward into the trunk, and wrap my arms around the Drumchata."
                     jacques "You sure you got that?"
@@ -308,10 +276,6 @@ label pucasCh1:
             centered "Which means-"
             centered "YOU DIED"
             return
-
-
-
-
 
     "He struts toward the house, broadsword slung on his back, a swagger to his step."
     jacques "That could have been really bad, Stella. Try and be more careful next time!"
