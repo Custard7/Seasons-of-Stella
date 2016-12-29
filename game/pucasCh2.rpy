@@ -1,10 +1,10 @@
 label pucasCh2:
-    show bg black
+    scene bg black
     with fade
     centered "Chapter 2"
     centered "Jàçqüés Cabin"
     centered "6:01 PM"
-    show bg cabin_upstairs
+    scene bg cabin_upstairs
     with dissolve
     "A wave of cinnamon scented warmth rushes over me."
     "The golden glow of candlelight and fireplace contrasts with the cold, austere blue of the woods outside."

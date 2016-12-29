@@ -12,18 +12,21 @@ label start:
     $ tiger_lick = False
 
     $ inventory = {};
-    show bg black
+    scene bg black
     "9:52 Class of 2014 Sentinel Graduation"
 
+    show s normal at center
     s "I am the Big Stella!"
 
     s "Get ready for an adventure!" 
     
     s "Is it time for me to pupate?"
 
+    hide s
+
     #Dissolve to black
     #Chapter 1
-    show bg gym far 
+    scene bg gym far 
 
     "I look around the hall, at the hundreds of students just like me. Waiting in anticipation from the sweet, hot release of graduation."
     "Finally, I'm ready. Ready to leave this life of being a big fish in a small pond."
@@ -34,7 +37,8 @@ label start:
     "This has been a long time coming. And you know, I might deserve it. Because-"
     
     p "Hey Stella!"
-    show bg gym close
+    scene bg gym close
+    show p blonde at center
     "I whip around, surprised, upon hearing my name."
     "It's none other than Pucas P. Potato."
     "His long, fluffy blonde hair flows elegantly as he speaks. He's tall, handsome, with a rugged, masculine exterior."
@@ -60,7 +64,8 @@ label start:
          "What should I do?"
 
          "Ask him out.":
-            show bg love basic
+            scene bg love basic
+            show p blonde at center
             $ pucas_points += 10
             s "Do you want to go get lunch with me?"
             jump Pucas_continue
@@ -68,7 +73,9 @@ label start:
          "Ride him like a pony.":
             $ pucas_points -= 50
             s "I'm going to ride you like a pony."
+            show p rad at center
             "That happened."
+            show p blonde at center
             "Pucas stares at me. It's strange, sort of mystifying. It's as if his eyes were large black holes."
             "Inside those black holes is the old Pucas."
             "Stuck."
@@ -113,7 +120,8 @@ label Pucas_continue:
     jump Pucas_goodbye
 
 label Pucas_goodbye:
-    show bg gym close
+    scene bg gym close
+    show p blonde at center
     "We slip into silence again."
     "He's starting to sweat. A steady drip goes down his forehead, slipping into the corner of his eye."
     "He flinches from the sting."
@@ -121,12 +129,12 @@ label Pucas_goodbye:
     "I'm excited for my date tonight. I'ts been a long time since I've actually gone out with anyone."
     "Pucas and I go way back."
     "Even in middle school, there was something between us."
-    show bg past playground
+    scene bg past playground
     "I remember one time, I was on the playground, by myself. I'd forgotten my lunch, so I went out earlier than all my friends.
     Grumbling tummy, light-headed, I was pretty miserable. It was not unusual for me to forget my lunch, but that day was different, somehow. 
 
     I felt as if I'd let myself, my family, my ancestors down. It was sort of a low point."
-    show bg past woodchips
+    scene bg past woodchips
     "I saw a small woodchip in the dirt. It was a little scuffed up, splintery."
     "It reminded me of myself."
     "Pucas approached me with a box of Fig Newtons. He offered me a handful, but I was too embarrassed.
@@ -136,17 +144,20 @@ label Pucas_goodbye:
     jump ganja
 
 label ganja:
-    show bg gym far
+    scene bg gym far
     "I jump back to attention."
     "Maddie velvet is on her way!"
     "I turn around, and see-"
-    show bg gym close
+    scene bg gym close
+    show star normal at center
     star "Stella! Want some green ganja?"    
     "It's Starbuck. Pretentious and giggly, as usual."
     "She's wearing stilts underneath her gown. Apparently those are in vogue now."
     "Her bedazzled eyepatch scatters light like a discoball."
     s "Green ganja? Why would I want that?"
+    show star squat at center
     star "Heehee! You'll be nervous, silly. You've got to speak in front of the WHOLE SCHOOL!"
+    show star normal
     "She reaches into her pocket, pulls out a brownie, and shoves the whole thing in her mouth."
     s "Was that just-"
     star "Yeah. Totes. Want one?"
@@ -164,9 +175,13 @@ label ganja:
             "*munch*"
             s "MMf . . . Thib ib dewishus . . . huh?"
             "DAMN. That's a good brownie. But it's not . . . special."
+            show star squat
             star "Oh, you thought THAT was the green ganja?"
+            show star normal
             "She gazes for a second, then-"
+            show star squat
             star "Bahahahahaha! Stella, that's one of my mom's brownies. That's nothing like green ganja."
+            show star normal
     
         "I'll pass.":
             $ nicaragua_points -= 10
@@ -198,7 +213,8 @@ label post_brownie:
         "Look inside?"
         
         "Just a peek . . .":
-            show bg mystic swirl
+            scene bg mystic swirl
+            show shrimp normal at truecenter
             $ nicaragua_points += 25
             $ stella_saw_shrimp = True
             "I peer over the edge of the case."
@@ -230,7 +246,7 @@ label post_brownie:
             "I WAS SUPPOSED TO BE SOMEONE!"
             "GO SOMEWHERE!"
             "NOT SUCCUMB TO THE FEELING THAT MY CRANIAL TISSUE, THE VERY FIBER OF MY SENTIENCE, IS BEING SPLINTERED INTO AN UNRECOGNIZABLE, PALLID MUCILAGE."
-            show bg black
+            scene bg black
             "DEATH IS NO RELEASE. DEATH IS PHILOSOPHICAL AGONY. YOU WILL NEVER, EVER, EVER-"
             jump stanley
     
@@ -254,20 +270,20 @@ label post_brownie:
            "Suddenly, a cloud of fuschia gas emits from Starbuck's empty shoulder sockets."
            s "What the hell is happening? What are you, you freak?"
            "The world seems strange, a little dim."
-           show bg gym far
+           scene bg gym far
            "Starbuck strides through the panicking crowd, spraying gas along her path"
            s "What have you . . . what have you done?"
            "My vision is fading fast."
            "What is Starbuck?"
            "Why was she here?"
            "Why did that bitch say I have no potential?"
-           show bg black
+           scene bg black
            "*HHHSSSSSSSSSSSSSSS*"
            #with Dissolve
            jump stanley
 
 label stanley:
-    show bg parking lot
+    scene bg parking lot
     "I open my eyes and find myself passed out in a non-descript parking lot."
     "Still woozy, the birds tweeting nearby seem to spiral in circles around my head."
     "*tweet tweet*"
@@ -275,7 +291,7 @@ label stanley:
     "My ears perk up to a combination of grunts and clinking metal."
     "*clink* *ungh* *clink*"
     "I look above at the building in front of me."
-    show bg parking storefront
+    scene bg parking storefront
     "SWOLL INC., the sign reads."
     "SYNERGIZING GIBBOUS SOLUTIONS SINCE 1997"
     if stella_saw_starbuck == True:
@@ -404,13 +420,13 @@ label stanley:
     s "What time is it?"
     nimo "Time to get you going! The Big Stella can't make the whole town wait!"
     nimo "Come on, I'll give you a ride."
-    show bg black
+    scene bg black
     nimo "*wink*"
     #with Dissolve
     jump alpha_phi
 
 label alpha_phi:
-    show bg school front
+    scene bg school front
     "Nimo drops me off in front of the school gymnasium."
     "I hastily check my phone:"
     "11:53 A.M."
@@ -427,7 +443,7 @@ label alpha_phi:
         '*FROM: DAD*'
         '*Where are you! They need you in the green room*!'
     'The big speech! I just need to find my notes...'
-    show bg greenroom
+    scene bg greenroom
     m 'Hey Stella.'
     s '*UAGH*'
     "Maddie snuck up on me!"
@@ -534,12 +550,12 @@ label alpha_phi:
             "Why did this girl hate me?"
             "What could I do to make it stop?"
             "Does she think I'm taking something away from her by giving a speech?"
-            show bg black
+            scene bg black
             "I hear the applause die down, and ready myself for the moment I would finally show the world Stella Belfort."
             jump big_speech
 
 label big_speech:
-    show bg speech giving
+    scene bg speech giving
     "An expanse of eager faces lies in front of me."
     "Everyone's waiting."
     "Anticipating."
@@ -575,7 +591,7 @@ label speech_continue:
         "Maddie gives me the finger."
         s "And soon, I'll have so many friends, I won't even need you suckers!"
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech finish
+        scene bg speech finish
         "The gym erupts in applause, and I am content."
         jump alphaphi
 
@@ -587,7 +603,7 @@ label speech_continue:
         s "5 PM tonight."
         s "Sparks will fly."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech finish
+        scene bg speech finish
         "The gym erupts in applause, and I am content."
         jump pucasCh1
 
@@ -603,7 +619,7 @@ label speech_continue:
         s "And next year, I'm going to pursue the fantasy I never knew I had:"
         s "Screwing over the average American family."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech finish
+        scene bg speech finish
         "The gym erupts in applause, and I am content."
         jump belfort
 
@@ -617,7 +633,7 @@ label speech_continue:
         s "Darmascula."
         s "All hail."
         s "Tomorrow is the next-first day of our lives! Let's make the most of it!"
-        show bg speech finish
+        scene bg speech finish
         "The gym erupts in applause, and I am content."
         jump nicaragua
 

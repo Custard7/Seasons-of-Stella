@@ -1,11 +1,23 @@
 # Declare characters used by this game.
 
 define s = Character('Stella', color="#518CFF") # Stella Shannon
+image s normal = "characters/stella/normal.png"
+image s smile = "characters/stella/smile.png"
+
 define p = Character('Pucas', color="#F2E1AE") # Lucas Veteto
+image p normal = "characters/pucas/normal.png"
+image p blonde = "characters/pucas/blonde.png"
+image p rad = "characters/pucas/rad.png"
+
 define star = Character('Starbuck', color="#00704a") # Lundy Park
+image star normal = "characters/starbuck/normal.png"
+image star squat = "characters/starbuck/squat.png"
+
 define m = Character('Maddie', color="#FF0066") # Adalyn Melvin
 define k = Character('Keith', color="#B35900") # Kieth Leathers
 define shrimp = Character('Darmascula', color="#FFC0CB") # Shrimp
+image shrimp normal = "characters/darmascula/normal.png"
+
 define tiger = Character('Tiger Mammal', color="#AA1111") # Taiga Gamell
 define babytiger = Character('Baby Tiger', color="#2233FF") # Bby Taiga
 define nimo = Character('Nimo', color="#AAAAAA") # Nina Gamell

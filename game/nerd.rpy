@@ -1,6 +1,6 @@
 label nerd:
     centered "Wednesday"
-    show bg quad_busy
+    scene bg quad_busy
     with fade
 
     "The days of the week come and go, like fast fading watercoloured blots on a canvas sheet."
@@ -12,7 +12,7 @@ label nerd:
     "Mercury aligns with Venus and all is right in the world."
     "I haven't done much socialization this week, so I'm gonna head down to the library and check out th astronomy club meeting."
 
-    show bg library
+    scene bg library
     with fade
     lassi "Stella Belfort!"
     mat "We were hoping you'd show up here!"

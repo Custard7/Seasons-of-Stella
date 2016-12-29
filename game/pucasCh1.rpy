@@ -3,12 +3,12 @@ label pucasCh1:
     $ ate_falafel = False
     $ grabbed_drumchata = False
     play music "snowmen.mp3" loop
-    show bg black
+    scene bg black
     "It's cold."
     centered "Winter"
     centered "Chapter 1"
     centered "December 31st, 2015"
-    show bg snowy_road
+    scene bg snowy_road
     with dissolve
     "Even in the car, the cold seeps through the thin window panes."
     "Our breath is frozen onto the inside of the glass, a web of crystal."
@@ -100,7 +100,7 @@ label pucasCh1:
 
     jacques "Well, you all can stop bitching, because we're finally here! New Year's 2K16 is a GO!"
 
-    show bg cabin_exterior
+    scene bg cabin_exterior
     with fade
     "We all hop out of the car, our breath steaming up in the biting air."
     "The trees rustle in a light winter breeze, shaking off a cascade of powder."
@@ -171,7 +171,7 @@ label pucasCh1:
                     "Not now."
                     "Not before I get to fix things with-"
                     s "Pucas."
-                    show bg black
+                    scene bg black
                     with fade
                     centered "Maybe you shouldn't have been so arrogant."
                     centered "Have you ever even handled a broadsword before?"
@@ -242,13 +242,13 @@ label pucasCh1:
             "I gaze out into the darkening forest."
             "*shudder*"
             "What have I done?"
-            show bg black
+            scene bg black
             with fade
             centered "Three Days Later"
             centered ". . ."
             centered ". . ."
             centered ". . ."
-            show bg coldforest
+            scene bg coldforest
             with dissolve
             "It's been three days since we lost the keys."
             "We tried to follow the creek west, but when Fukklesprout fell in, we began to break down."
@@ -266,7 +266,7 @@ label pucasCh1:
             $ renpy.pause(1)
             beast "ooooooOOOOO AH AH!"
             centered "{size=+30}Help Me{/size}"
-            show bg black
+            scene bg black
             with fade
             centered "Looks like you made the wrong choice."
             centered "Instead of just offering help to your friend, your arrogance got in the way."
@@ -285,12 +285,12 @@ label pucasCh1:
         "Good thing Pucas was there to save the day."
     "Jàçqüés helps me carry everything, and eventually, we're ready to go inside."
     s "Finally! I'm freezing."
-    show bg cabin_front
+    scene bg cabin_front
     "The cabin door sits in front of us, waiting to be opened up."
     "Waiting for us to welcome in the New Year."
     "Waiting for me to..."
     "Talk with Pucas."
-    show bg black
+    scene bg black
     with fade
     $ renpy.pause(1)
     jump pucasCh2

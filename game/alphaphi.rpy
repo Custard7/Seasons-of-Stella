@@ -4,9 +4,9 @@ label alphaphi:
     $ anti_frat = False
     $ anti_nerd = False
 
-    show bg black
+    scene bg black
     centered "Fall"
-    show bg airport
+    scene bg airport
     "Eyes wide, I step off the 747 and into the sweet, sticky, September, New-Haven air."
     "To my right, an old couple argues with a gate agent."
     "To my left, a moose gallivants across the tarmac."
@@ -17,14 +17,14 @@ label alphaphi:
     "The block 'Y'."
     "Yale University, here I come."
 
-    show bg quad_busy
+    scene bg quad_busy
     with fade
     "We pull up in front of a lively campus, hundreds of excited freshmen milling about the quad."
     "*SKRRRRR*"
     "I jump out of the car, dump my rucksack in my new dorm room and rush out to make new friends."
     "I wonder who my roommate will be!"
     "All around me, clubs and societies woo new students."
-    show bg quad_closeup
+    scene bg quad_closeup
     cdog "Welcome, pledges!"
     durks "Do you want to party hard?"
     cdog "Do you want to pull?"
@@ -73,14 +73,14 @@ label alphaphi:
             jump club_intros
 
         "Walk by the frat bros.":
-            show bg quad_busy
+            scene bg quad_busy
             "I'm really not in the mood for an argument on social issues right now."
             "I walk on by as the frat bros continue their loud calls."
             "I'm sure I'll meet those two again later."
             jump club_intros
 
 label club_intros:
-    show bg quad_busy
+    scene bg quad_busy
     "I spot Maddie mingling around a sorority table."
     "I'll investigate once she leaves."
     "I walk among the throngs of club tables, searching for something that piques my interest."
@@ -91,7 +91,7 @@ label club_intros:
     "Those all sound lame."
     "A sign catches the corner of my eye."
     "*Astronomy Club*"
-    show bg quad_closeup
+    scene bg quad_closeup
     s "I love astrology!"
     lassi "Actually, this is astronomy club. The study of celestial bodies."
     lassi "Astrology isn't real."
@@ -125,10 +125,10 @@ label club_intros:
             jump aphi_intro
 
 label aphi_intro:
-    show bg quad_busy
+    scene bg quad_busy
     "I can see that Maddie's left the sorority recruitment table."
     "Slowly, I jaunt over to check out what she was up to."
-    show bg quad_closeup
+    scene bg quad_closeup
     stormee "Hi There!"
     "A bright, jovial voice interrupts my internal monologue."
     stormee "I'm Stormee, president of Alpha Phi sorority here at Yale! Who are you?"
@@ -174,9 +174,9 @@ label Aphi_choice:
             jump club_outro
 
 label club_outro:
-    show bg quad_busy
+    scene bg quad_busy
     "The welcoming events are wrapping up, I should probably head back to my dorm."
-    show bg stairwell
+    scene bg stairwell
     with fade
     "I can't believe that they assigned me a six-floor walk-up."
     s "*pant*"
@@ -199,7 +199,7 @@ label club_outro:
     s "..."
     s "So I'm gonna go to my dorm now."
     "I leave Tiger behind in the stairwell and walk into my dorm room."
-    show bg dorm_room
+    scene bg dorm_room
     "It's a converted double."
     "Built as a bathroom but converted into a double."
     "On the top-bunk/washbasin sits a kind-looking girl."
@@ -231,7 +231,7 @@ label club_outro:
         jump ch1_conclusion
 
 label ch1_conclusion:
-    show bg black
+    scene bg black
     "After a shower, I slip into bed and turn off the lights."
     "What a day."
     "Tomorrow, I start classes, but I'm most excited to see where this wild train of characters takes me."

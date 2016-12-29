@@ -1,6 +1,6 @@
 label alphaphi_pledge:
     centered "Thursday"
-    show bg quad_busy
+    scene bg quad_busy
     "The days of the week come and go, like fast fading watercoloured blots on a canvas sheet."
     "Every once in a while, I spot a long forgotten contact from Montana."
     "Nimo sits in the front row of my History of Women's Power-lifting Seminar."
@@ -8,14 +8,14 @@ label alphaphi_pledge:
     "Maddie brushes by me in the rooftop-coffeeshop, cool and collected as ever."
     "But now, the fateful day has come."
     "It's time to compete with 50 other freshman girls, to show that I'd be the best pledge for Alpha Phi."
-    show bg srat
+    scene bg srat
     "I walk across campus to the gargantuan sorority house."
     "Its massive white pillars evoke images of Southern plantation estates."
     "A sorority girl stands at the entryway, gatekeeeper to this magical kingdom."
     girl "Who do you know here?"
     s "I have this invitation card, I was told to come here."
     girl "all right, head on in."
-    show bg aphi_enter
+    scene bg aphi_enter
     "All around me, girls mill around, nervously chatting away."
     "I see Stormee walk out above the ornate staircase to address the crowd."
     stormee "Welcome girls!"
@@ -23,10 +23,10 @@ label alphaphi_pledge:
     stormee "All of us actives are ready to find the cream of the social crop for our fall '14 pledge class!"
     stormee "All girls please walk down to the basement and we'll begin stage one of the bid process!"
     "I nervously shuffles down to the cold basement, ready to prove I've got what it takes."
-    show bg black
+    scene bg black
     centered "Stage One"
 
-    show bg basement
+    scene bg basement
     "I line up with the rest of the girls."
     "In front of us, the actives prepare buckets of hot grease."
     stormee "We will ask you a series of questions!"
@@ -69,7 +69,7 @@ label alphaphi_pledge:
             stormee "Burn her."
             s "n-n-no, wait!"
             "It was too late, my face is doused in burning hot oil."
-            show bg black
+            scene bg black
             "My vision quickly fades."
             "I wish I had taken Greek Life more seriously."
             "Maybe I'd still be alive."
@@ -86,7 +86,7 @@ label alphaphi_pledge:
             stormee "Burn her."
             s "n-n-no, wait!"
             "It was too late, my face is doused in burning hot oil."
-            show bg black
+            scene bg black
             "My vision quickly fades."
             "I wish I had taken Greek Life more seriously."
             "Maybe I'd still be alive."
@@ -113,7 +113,7 @@ label stage1_continue:
             stormee "Burn her."
             s "n-n-no, wait!"
             "It was too late, my face is doused in burning hot oil."
-            show bg black
+            scene bg black
             "My vision quickly fades."
             "I wish I had taken Greek Life more seriously."
             "Maybe I'd still be alive."
@@ -134,7 +134,7 @@ label stage1_continue:
             stormee "Burn her."
             s "n-n-no, wait!"
             "It was too late, my face is doused in burning hot oil."
-            show bg black
+            scene bg black
             "My vision quickly fades."
             "I wish I had taken Greek Life more seriously."
             "Maybe I'd still be alive."
@@ -147,9 +147,9 @@ label stage1_continue:
 label stage2:
     "Out of the 50 girls that had come here, only 30 remained."
     stormee "All right PNMs, come out to the pool outside for stage two!"
-    show bg black
+    scene bg black
     centered "Stage Two"
-    show bg pool
+    scene bg pool
     stormee "Stage two is a swimming competition."
     stormee "The top 20 times will advance to the final stage."
     "Thank god I had done swimming in high school!"
@@ -176,9 +176,9 @@ label stage2:
     "The rest of the girls swim, but none can beat my score."
     "I guess I'm headed to stage three."
     stormee "All right everyone! Head on back to the basement!"
-    show bg black
+    scene bg black
     centered "Stage Three"
-    show bg basement
+    scene bg basement
     stormee "Stage Three is a poetry slam."
     stormee "Those who perform the least geedy poems will get a bid to Alpha Phi."
     s "Um, what's a geed?"
@@ -257,7 +257,7 @@ label stage2:
             "She deftly sidesteps my charge, grabs a candlestick and whacks me over the head."
             "*THWACK*"
             "My vision fades."
-            show bg black
+            scene bg black
             "I couldn't handle the rejection."
             centered "You have died."
             centered "R.I.P. Stella Belfort"
